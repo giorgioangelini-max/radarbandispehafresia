@@ -1,0 +1,195 @@
+# =====================================================================
+# PERTINENZA PER SPEHA FRESIA
+# =====================================================================
+# Ogni bando prende un punteggio sommando i pesi delle parole trovate
+# in titolo e sommario (nel titolo valgono doppio). Il punteggio decide
+# l'etichetta: alta / media / bassa. Le soglie sono in fondo.
+#
+# Le parole sono cercate come "inizio di parola", quindi "formativ"
+# prende formativo, formativa, formativi. Maiuscole/accenti non contano.
+# =====================================================================
+
+categorie:
+
+  formazione:
+    etichetta: Formazione
+    peso: 3
+    parole:
+      - formazione
+      - formativ
+      - corso
+      - corsi
+      - upskilling
+      - reskilling
+      - competenze
+      - qualifica
+      - apprendistato
+      - tirocin
+      - ITS Academy
+      - IeFP
+      - e-learning
+      - catalogo dell'offerta
+      - academy
+      - voucher
+
+  politiche_attive:
+    etichetta: Politiche attive
+    peso: 3
+    parole:
+      - politiche attive
+      - GOL
+      - inserimento lavorativo
+      - inclusione lavorativa
+      - inclusione attiva
+      - occupabilit
+      - disoccupat
+      - NEET
+      - orientamento
+      - bilancio di competenze
+      - accompagnamento al lavoro
+      - servizi per il lavoro
+      - agenzi
+      - ricollocazione
+      - lavoratori
+      - somministra
+
+  terzo_settore:
+    etichetta: Terzo settore / sociale
+    peso: 3
+    parole:
+      - terzo settore
+      - ETS
+      - RUNTS
+      - cooperativ
+      - impresa sociale
+      - imprese sociali
+      - economia sociale
+      - volontariato
+      - associazion
+      - co-progettazione
+      - coprogettazione
+      - welfare
+      - inclusione sociale
+      - povertà educativa
+      - minori
+      - fragilit
+      - disabilit
+      - migranti
+      - detenut
+      - esecuzione penale
+      - giustizia riparativa
+      - Cassa delle Ammende
+
+  sviluppo_locale:
+    etichetta: Sviluppo locale
+    peso: 2
+    parole:
+      - sviluppo locale
+      - aree interne
+      - GAL
+      - LEADER
+      - rigenerazione
+      - animazione territoriale
+      - partenariat
+      - reti territoriali
+      - comunità
+      - filiera
+      - agricol
+
+  digitale_innovazione:
+    etichetta: Digitale / consulenza
+    peso: 3
+    parole:
+      - digitalizzazione
+      - digitale
+      - competenze digitali
+      - transizione digitale
+      - trasformazione digitale
+      - intelligenza artificiale
+      - "4.0"
+      - "5.0"
+      - competence center
+      - BI-REX
+      - ARTES
+      - EDIH
+      - digital innovation hub
+      - Punto Impresa Digitale
+      - innovation manager
+      - temporary manager
+      - consulenza
+      - servizi di consulenza
+      - assistenza tecnica
+      - capacity building
+      - innovazione organizzativa
+      - cybersecurity
+      - AI
+
+  pa_scuola:
+    etichetta: PA / scuola
+    peso: 2
+    parole:
+      - pubblica amministrazione
+      - dipendenti pubblici
+      - enti locali
+      - Formez
+      - Performa
+      - scuola
+      - scuole
+      - personale scolastico
+      - docenti
+      - istituti scolastici
+      - dispersione scolastica
+      - STEM
+
+  europa:
+    etichetta: Europa
+    peso: 2
+    parole:
+      - Erasmus
+      - CERV
+      - FSE
+      - ESF
+      - EaSI
+      - Interreg
+      - call for proposals
+      - capacity-building
+      - mobilit
+
+# Parole che TOLGONO punti: cose che escono dagli stessi siti ma non
+# sono opportunità per Speha (gare di fornitura, concorsi, esiti).
+penalita:
+  peso: -4
+  parole:
+    - fornitura
+    - forniture
+    - buoni pasto
+    - lavori di
+    - manutenzione
+    - concorso pubblico
+    - concorsi
+    - mobilità volontaria
+    - alienazione
+    - locazione
+    - noleggio
+    - pulizia
+    - arredi
+    - affidamento diretto
+    - servizi bancari
+    - assicurativ
+    - graduatoria definitiva
+    - elenco ammessi
+    - esiti
+    - decreto di approvazione
+    - rendiconto
+    - liquidazione
+
+# Soglie del punteggio
+soglie:
+  alta: 7
+  media: 3
+
+# Parole che indicano il territorio quando la fonte è "auto"
+territori:
+  sicilia: [sicilia, sicilian, palermo, catania, agrigento, messina, siracusa, ragusa, trapani, enna, caltanissetta, GURS, canicatt]
+  lazio: [lazio, roma, frosinone, latina, rieti, viterbo]
+  ue: [europe, european, europea, europeo, unione europea, call for, erasmus, cerv, interreg, horizon, easi]

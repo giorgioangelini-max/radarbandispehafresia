@@ -1,0 +1,29 @@
+# Lo lanci a mano da Actions → "Verifica fonti" → Run workflow.
+# Non modifica nulla: stampa per ogni fonte cosa trova o perché fallisce.
+name: Verifica fonti
+
+on:
+  workflow_dispatch:
+    inputs:
+      fonte:
+        description: "id di una fonte sola (vuoto = tutte)"
+        required: false
+        default: ""
+
+jobs:
+  verifica:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Prova le fonti
+        run: |
+          if [ -n "${{ github.event.inputs.fonte }}" ]; then
+            python verifica_fonti.py --fonte "${{ github.event.inputs.fonte }}" --titoli 8
+          else
+            python verifica_fonti.py --titoli 4
+          fi

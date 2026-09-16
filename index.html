@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radar bandi · Speha Fresia</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%232450D6'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F3F5F8; --surface: #FFFFFF; --ink: #172033; --muted: #5B6577; --line: #D9DEE6;
+    --accent: #2450D6; --accent-soft: #E6ECFB; --ok: #1B7F4C; --ok-soft: #E3F3EA;
+    --warn: #B7780F; --warn-soft: #FBF1DC; --danger: #B3261E; --danger-soft: #F9E3E1;
+    --font: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.45 var(--font); }
+  a { color: inherit; }
+  button { font: inherit; color: inherit; cursor: pointer; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+  .barra { display: flex; align-items: center; gap: 16px; padding: 14px 24px; border-bottom: 1px solid var(--line); background: var(--surface); }
+  .barra h1 { margin: 0; font-size: 17px; font-weight: 600; letter-spacing: -.01em; }
+  .barra h1 small { font-weight: 400; color: var(--muted); margin-left: 8px; }
+  .barra .aggiornato { color: var(--muted); font-size: 13px; margin-left: auto; }
+  .barra .aggiornato b { color: var(--ink); font-weight: 500; }
+  .bottone { border: 1px solid var(--line); background: var(--surface); border-radius: 6px; padding: 6px 11px; font-size: 13px; }
+  .bottone:hover { border-color: var(--ink); }
+  .bottone.attivo { background: var(--ink); color: #fff; border-color: var(--ink); }
+
+  .cerca { padding: 28px 24px 18px; background: var(--surface); border-bottom: 1px solid var(--line); }
+  .cerca .campo { position: relative; max-width: 880px; }
+  .cerca input { width: 100%; font: 500 22px/1.2 var(--font); padding: 14px 44px 14px 16px; border: 2px solid var(--ink); border-radius: 8px; background: var(--surface); color: var(--ink); }
+  .cerca input::placeholder { color: #9AA3B2; font-weight: 400; }
+  .cerca .svuota { position: absolute; right: 8px; top: 50%; transform: translateY(-50%); border: 0; background: none; font-size: 22px; line-height: 1; padding: 6px 8px; color: var(--muted); display: none; }
+  .cerca .conteggio { margin: 12px 0 0; color: var(--muted); font-size: 14px; }
+  .cerca .conteggio b { color: var(--ink); font-weight: 600; }
+
+  .corpo { display: grid; grid-template-columns: 232px 1fr; gap: 0; min-height: 60vh; }
+  .filtri { padding: 20px 20px 20px 24px; border-right: 1px solid var(--line); position: sticky; top: 0; align-self: start; max-height: 100vh; overflow: auto; }
+  .gruppo { margin-bottom: 22px; }
+  .gruppo h3 { margin: 0 0 6px; font-size: 12px; font-weight: 600; color: var(--muted); }
+  .gruppo label { display: flex; align-items: center; gap: 8px; padding: 4px 0; font-size: 14px; cursor: pointer; }
+  .gruppo label input { accent-color: var(--accent); margin: 0; }
+  .gruppo label .n { margin-left: auto; color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+  .gruppo select { width: 100%; font: inherit; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
+  .azioni { display: flex; flex-direction: column; gap: 6px; }
+
+  .lista { padding: 8px 24px 60px; }
+  .riga { display: grid; grid-template-columns: 1fr 150px; gap: 18px; padding: 14px 0; border-bottom: 1px solid var(--line); cursor: pointer; }
+  .riga:hover .titolo { text-decoration: underline; text-decoration-color: var(--line); }
+  .riga.nuovo .titolo::before { content: "Nuovo"; display: inline-block; font-size: 11px; font-weight: 600; color: var(--accent); background: var(--accent-soft); border-radius: 4px; padding: 1px 6px; margin-right: 8px; vertical-align: 2px; }
+  .titolo { margin: 0; font-size: 16px; font-weight: 500; line-height: 1.35; }
+  .meta { margin-top: 5px; color: var(--muted); font-size: 13px; display: flex; flex-wrap: wrap; gap: 4px 14px; }
+  .meta .pert { font-weight: 500; }
+  .pert.alta { color: var(--accent); } .pert.media { color: var(--ink); } .pert.bassa { color: var(--muted); }
+  .tag { display: inline-block; font-size: 12px; color: var(--muted); border: 1px solid var(--line); border-radius: 4px; padding: 0 6px; margin: 6px 6px 0 0; }
+  .stella { border: 0; background: none; font-size: 17px; padding: 0 6px 0 0; color: #C5CCD8; line-height: 1; }
+  .stella.on { color: var(--warn); }
+
+  .scad { text-align: right; padding-left: 12px; border-left: 3px solid var(--line); font-variant-numeric: tabular-nums; }
+  .scad .g { font-size: 22px; font-weight: 600; line-height: 1.1; letter-spacing: -.02em; }
+  .scad .d { font-size: 12px; color: var(--muted); margin-top: 3px; }
+  .scad.aperto { border-color: var(--ok); } .scad.aperto .g { color: var(--ok); }
+  .scad.vicino { border-color: var(--warn); } .scad.vicino .g { color: var(--warn); }
+  .scad.scaduto { border-color: var(--danger); } .scad.scaduto .g { color: var(--danger); font-size: 15px; }
+  .scad.sportello .g { color: var(--ok); font-size: 15px; }
+  .scad.nd .g { color: var(--muted); font-size: 15px; font-weight: 500; }
+
+  .dettaglio { grid-column: 1 / -1; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; margin-top: 4px; font-size: 14px; cursor: default; }
+  .dettaglio p { margin: 0 0 10px; max-width: 78ch; }
+  .dettaglio .link { display: inline-block; font-weight: 500; color: var(--accent); }
+  .dettaglio dl { display: grid; grid-template-columns: 110px 1fr; gap: 3px 12px; margin: 10px 0; color: var(--muted); }
+  .dettaglio dd { margin: 0; color: var(--ink); }
+  .dettaglio textarea { width: 100%; min-height: 56px; font: inherit; padding: 8px; border: 1px solid var(--line); border-radius: 6px; resize: vertical; }
+
+  .vuoto { padding: 48px 0; color: var(--muted); max-width: 60ch; }
+  .vuoto b { color: var(--ink); }
+  .avviso { margin: 16px 24px 0; padding: 10px 14px; background: var(--warn-soft); border-left: 3px solid var(--warn); border-radius: 4px; font-size: 14px; }
+
+  .pannello { display: none; padding: 16px 24px 40px; }
+  .pannello.aperto { display: block; }
+  .pannello table { width: 100%; border-collapse: collapse; font-size: 13px; background: var(--surface); }
+  .pannello th, .pannello td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .pannello th { color: var(--muted); font-weight: 600; }
+  .pannello .ok { color: var(--ok); font-weight: 600; } .pannello .errore { color: var(--danger); font-weight: 600; }
+  .pannello .err { color: var(--muted); font-size: 12px; }
+
+  @media (max-width: 820px) {
+    .barra { padding: 12px 16px; flex-wrap: wrap; gap: 8px 12px; }
+    .barra .aggiornato { margin-left: 0; width: 100%; order: 3; }
+    .cerca { padding: 18px 16px 14px; }
+    .cerca input { font-size: 18px; }
+    .corpo { grid-template-columns: 1fr; }
+    .filtri { position: static; max-height: none; border-right: 0; border-bottom: 1px solid var(--line); padding: 12px 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 6px 18px; }
+    .gruppo { margin-bottom: 8px; }
+    .lista { padding: 4px 16px 60px; }
+    .riga { grid-template-columns: 1fr 108px; gap: 12px; }
+    .scad .g { font-size: 18px; }
+    .dettaglio dl { grid-template-columns: 90px 1fr; }
+    .pannello { padding: 12px 16px 40px; overflow-x: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="barra">
+  <h1>Radar bandi <small>Speha Fresia</small></h1>
+  <button class="bottone" id="btn-fonti" aria-expanded="false">Stato fonti</button>
+  <button class="bottone" id="btn-csv">Esporta CSV</button>
+  <div class="aggiornato" id="aggiornato">Caricamento…</div>
+</header>
+
+<section class="cerca">
+  <div class="campo">
+    <input id="q" type="search" placeholder="Cerca: formazione detenuti, voucher digitalizzazione, Foncoop, CERV…" autocomplete="off" autofocus>
+    <button class="svuota" id="svuota" aria-label="Svuota ricerca">×</button>
+  </div>
+  <p class="conteggio" id="conteggio"></p>
+</section>
+
+<div class="avviso" id="avviso" hidden></div>
+
+<section class="pannello" id="pannello-fonti" aria-live="polite"></section>
+
+<main class="corpo">
+  <aside class="filtri">
+    <div class="gruppo">
+      <h3>Pertinenza</h3>
+      <label><input type="radio" name="pert" value="alta">Solo alta<span class="n" data-n="pert-alta"></span></label>
+      <label><input type="radio" name="pert" value="media" checked>Alta e media<span class="n" data-n="pert-media"></span></label>
+      <label><input type="radio" name="pert" value="tutte">Tutto<span class="n" data-n="pert-tutte"></span></label>
+    </div>
+    <div class="gruppo">
+      <h3>Stato</h3>
+      <label><input type="radio" name="stato" value="aperti" checked>Aperti o senza data</label>
+      <label><input type="radio" name="stato" value="scadenza">Con scadenza futura</label>
+      <label><input type="radio" name="stato" value="tutti">Anche scaduti</label>
+    </div>
+    <div class="gruppo">
+      <h3>Territorio</h3>
+      <label><input type="checkbox" name="terr" value="sicilia" checked>Sicilia<span class="n" data-n="terr-sicilia"></span></label>
+      <label><input type="checkbox" name="terr" value="lazio" checked>Lazio<span class="n" data-n="terr-lazio"></span></label>
+      <label><input type="checkbox" name="terr" value="nazionale" checked>Nazionale<span class="n" data-n="terr-nazionale"></span></label>
+      <label><input type="checkbox" name="terr" value="ue" checked>Unione europea<span class="n" data-n="terr-ue"></span></label>
+    </div>
+    <div class="gruppo">
+      <h3>Fonti</h3>
+      <label><input type="checkbox" name="blocco" value="regionale" checked>Regionali<span class="n" data-n="blocco-regionale"></span></label>
+      <label><input type="checkbox" name="blocco" value="nazionale" checked>Nazionali<span class="n" data-n="blocco-nazionale"></span></label>
+      <label><input type="checkbox" name="blocco" value="fondi" checked>Fondi interprofessionali<span class="n" data-n="blocco-fondi"></span></label>
+      <label><input type="checkbox" name="blocco" value="ue" checked>Europee<span class="n" data-n="blocco-ue"></span></label>
+      <label><input type="checkbox" name="blocco" value="aggregatori" checked>Aggregatori<span class="n" data-n="blocco-aggregatori"></span></label>
+    </div>
+    <div class="gruppo">
+      <h3>Ordina per</h3>
+      <select id="ordine">
+        <option value="novita">Ultimi trovati</option>
+        <option value="scadenza">Scadenza più vicina</option>
+        <option value="punteggio">Pertinenza</option>
+      </select>
+    </div>
+    <div class="gruppo azioni">
+      <label><input type="checkbox" id="solo-nuovi">Solo nuovi (7 giorni)</label>
+      <label><input type="checkbox" id="solo-stella">Solo segnati ★</label>
+      <button class="bottone" id="reset">Azzera filtri</button>
+    </div>
+  </aside>
+
+  <section class="lista" id="lista"></section>
+</main>
+
+<script>
+(() => {
+  const OGGI = new Date(); OGGI.setHours(0,0,0,0);
+  const GIORNO = 86400000;
+  const el = id => document.getElementById(id);
+  const norm = s => (s || "").normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  const fmt = iso => iso ? new Date(iso).toLocaleDateString("it-IT", { day: "numeric", month: "short", year: "numeric" }) : "";
+  const salva = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
+  const leggi = (k, d) => { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } };
+
+  let dati = { bandi: [], fonti: [] }, aperto = null;
+  let stelle = leggi("radar.stelle", {}), note = leggi("radar.note", {});
+  const TERR = { sicilia: "Sicilia", lazio: "Lazio", nazionale: "Nazionale", ue: "UE", altro: "Altro" };
+  const BLOCCO = { regionale: "Regionale", nazionale: "Nazionale", fondi: "Fondo interprof.", ue: "UE", aggregatori: "Aggregatore" };
+
+  // ---- stato del bando rispetto alla scadenza -------------------------
+  function stato(b) {
+    if (b.scadenza) {
+      const g = Math.round((new Date(b.scadenza) - OGGI) / GIORNO);
+      if (g < 0) return { classe: "scaduto", g, grande: "Scaduto", piccolo: fmt(b.scadenza) };
+      if (g === 0) return { classe: "vicino", g, grande: "Oggi", piccolo: "scade " + fmt(b.scadenza) };
+      return { classe: g <= 14 ? "vicino" : "aperto", g, grande: g + (g === 1 ? " giorno" : " giorni"), piccolo: "scade " + fmt(b.scadenza) };
+    }
+    if (b.sportello) return { classe: "sportello", g: 9e9, grande: "A sportello", piccolo: "fino a esaurimento" };
+    return { classe: "nd", g: 9e9 - 1, grande: "Scadenza n.d.", piccolo: b.pubblicato ? "pubbl. " + fmt(b.pubblicato) : "apri il link" };
+  }
+
+  // ---- filtri ------------------------------------------------------------
+  function filtri() {
+    const q = document.querySelector.bind(document);
+    const checked = n => [...document.querySelectorAll(`input[name=${n}]:checked`)].map(i => i.value);
+    return {
+      testo: el("q").value, pert: q("input[name=pert]:checked").value, stato: q("input[name=stato]:checked").value,
+      terr: checked("terr"), blocco: checked("blocco"), ordine: el("ordine").value,
+      nuovi: el("solo-nuovi").checked, stella: el("solo-stella").checked,
+    };
+  }
+  function applica(f, b) {
+    if (f.pert === "alta" && b.pertinenza !== "alta") return false;
+    if (f.pert === "media" && b.pertinenza === "bassa") return false;
+    const s = stato(b);
+    if (f.stato === "aperti" && s.classe === "scaduto") return false;
+    if (f.stato === "scadenza" && !(b.scadenza && s.g >= 0)) return false;
+    if (!f.terr.includes(b.territorio)) return false;
+    if (!f.blocco.includes(b.blocco)) return false;
+    if (f.nuovi && (OGGI - new Date(b.prima_visto)) / GIORNO > 7) return false;
+    if (f.stella && !stelle[b.id]) return false;
+    if (f.testo.trim()) {
+      const pagliaio = norm([b.titolo, b.sommario, b.ente, b.fonte, (b.categorie || []).join(" ")].join(" "));
+      for (const t of norm(f.testo).split(/\s+/).filter(Boolean)) if (!pagliaio.includes(t)) return false;
+    }
+    return true;
+  }
+  const ordina = { novita: (a, b) => (b.prima_visto || "").localeCompare(a.prima_visto || "") || b.punteggio - a.punteggio,
+                   scadenza: (a, b) => stato(a).g - stato(b).g || b.punteggio - a.punteggio,
+                   punteggio: (a, b) => b.punteggio - a.punteggio || stato(a).g - stato(b).g };
+
+  // ---- rendering ----------------------------------------------------------
+  function contatori(f) {
+    // conteggi in coda ai filtri: quanti ci sarebbero cambiando SOLO quel filtro
+    const base = dati.bandi.filter(b => applica({ ...f, pert: "tutte" }, b));
+    const pertN = { alta: base.filter(b => b.pertinenza === "alta").length, media: base.filter(b => b.pertinenza !== "bassa").length, tutte: base.length };
+    for (const k in pertN) setN("pert-" + k, pertN[k]);
+    const baseT = dati.bandi.filter(b => applica({ ...f, terr: Object.keys(TERR) }, b));
+    for (const t of ["sicilia", "lazio", "nazionale", "ue"]) setN("terr-" + t, baseT.filter(b => b.territorio === t).length);
+    const baseB = dati.bandi.filter(b => applica({ ...f, blocco: Object.keys(BLOCCO) }, b));
+    for (const k in BLOCCO) setN("blocco-" + k, baseB.filter(b => b.blocco === k).length);
+  }
+  function setN(k, n) { const s = document.querySelector(`[data-n="${k}"]`); if (s) s.textContent = n; }
+
+  function render() {
+    const f = filtri();
+    salva("radar.filtri", f);
+    el("svuota").style.display = f.testo ? "block" : "none";
+    const ris = dati.bandi.filter(b => applica(f, b)).sort(ordina[f.ordine]);
+    contatori(f);
+
+    const aperti = dati.bandi.filter(b => stato(b).classe !== "scaduto" && b.pertinenza !== "bassa").length;
+    el("conteggio").innerHTML = `<b>${ris.length}</b> risultati · in archivio ${dati.bandi.length} bandi, di cui <b>${aperti}</b> pertinenti e non scaduti`;
+
+    const L = el("lista");
+    if (!ris.length) {
+      L.innerHTML = `<div class="vuoto"><b>Nessun bando con questi filtri.</b><br>Prova ad allargare la pertinenza a "Tutto", includere gli scaduti, o togliere una parola dalla ricerca.</div>`;
+      return;
+    }
+    L.innerHTML = ris.slice(0, 400).map(riga).join("") +
+      (ris.length > 400 ? `<div class="vuoto">Mostro i primi 400. Restringi con la ricerca per vedere gli altri.</div>` : "");
+  }
+
+  function riga(b) {
+    const s = stato(b);
+    const nuovo = (OGGI - new Date(b.prima_visto)) / GIORNO <= 7;
+    const cat = (b.categorie || []).map(c => `<span class="tag">${esc(c)}</span>`).join("");
+    return `<article class="riga ${nuovo ? "nuovo" : ""}" data-id="${b.id}">
+      <div>
+        <h2 class="titolo"><button class="stella ${stelle[b.id] ? "on" : ""}" data-stella="${b.id}" aria-label="Segna">★</button>${esc(b.titolo)}</h2>
+        <div class="meta"><span class="pert ${b.pertinenza}">Pertinenza ${b.pertinenza}</span><span>${esc(b.ente)}</span><span>${TERR[b.territorio] || b.territorio}</span></div>
+        <div>${cat}</div>
+      </div>
+      <div class="scad ${s.classe}"><div class="g">${s.grande}</div><div class="d">${s.piccolo}</div></div>
+      ${aperto === b.id ? dettaglio(b) : ""}
+    </article>`;
+  }
+
+  function dettaglio(b) {
+    return `<div class="dettaglio">
+      ${b.sommario ? `<p>${esc(b.sommario)}</p>` : ""}
+      <a class="link" href="${esc(b.url)}" target="_blank" rel="noopener">Apri sul sito della fonte ↗</a>
+      <dl>
+        <dt>Fonte</dt><dd>${esc(b.fonte)} (${BLOCCO[b.blocco] || b.blocco})</dd>
+        <dt>Trovato il</dt><dd>${fmt(b.prima_visto)}${b.pubblicato ? " · pubblicato " + fmt(b.pubblicato) : ""}</dd>
+        <dt>Scadenza</dt><dd>${b.scadenza ? fmt(b.scadenza) : "non riconosciuta nel testo: verifica sul link"}</dd>
+        <dt>Punteggio</dt><dd>${b.punteggio} (${(b.categorie || []).join(", ") || "nessuna parola chiave"})</dd>
+      </dl>
+      <label>Le tue note (restano su questo browser)<br>
+        <textarea data-nota="${b.id}" placeholder="Es. chiesto a Felice se partecipiamo; partner: …">${esc(note[b.id] || "")}</textarea></label>
+    </div>`;
+  }
+  const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+  // ---- stato fonti -------------------------------------------------------
+  function pannelloFonti() {
+    const P = el("pannello-fonti");
+    if (!dati.fonti.length) { P.innerHTML = `<p class="vuoto">Nessun controllo eseguito ancora.</p>`; return; }
+    const ok = dati.fonti.filter(f => f.stato === "ok").length;
+    P.innerHTML = `<p style="margin:0 0 10px;color:var(--muted)">${ok} fonti su ${dati.fonti.length} hanno risposto all'ultimo controllo. Una fonte in errore va sistemata in <code>fonti.yaml</code>: di solito basta puntarla alla pagina "Bandi" giusta del sito.</p>
+    <table><thead><tr><th>Fonte</th><th>Blocco</th><th>Esito</th><th>Trovati</th><th>Nuovi</th><th>Ultimo ok</th><th>Dettaglio</th></tr></thead><tbody>
+    ${dati.fonti.map(f => `<tr><td>${esc(f.nome)}</td><td>${BLOCCO[f.blocco] || f.blocco}</td><td class="${f.stato}">${f.stato === "ok" ? "ok" : "errore"}</td><td>${f.trovati}</td><td>${f.nuovi}</td><td>${fmt(f.ultimo_ok) || "mai"}</td><td class="err">${esc(f.errore || f.via || "")}</td></tr>`).join("")}
+    </tbody></table>`;
+  }
+
+  // ---- CSV ------------------------------------------------------------------
+  function csv() {
+    const f = filtri();
+    const ris = dati.bandi.filter(b => applica(f, b)).sort(ordina[f.ordine]);
+    const cella = v => `"${String(v ?? "").replace(/"/g, '""')}"`;
+    const righe = [["Titolo", "Ente", "Fonte", "Territorio", "Pertinenza", "Punteggio", "Categorie", "Scadenza", "Pubblicato", "Trovato il", "Link", "Note"]]
+      .concat(ris.map(b => [b.titolo, b.ente, b.fonte, TERR[b.territorio] || b.territorio, b.pertinenza, b.punteggio, (b.categorie || []).join("; "), b.scadenza || "", b.pubblicato || "", b.prima_visto, b.url, note[b.id] || ""]));
+    const blob = new Blob(["\ufeff" + righe.map(r => r.map(cella).join(";")).join("\r\n")], { type: "text/csv;charset=utf-8" });
+    const a = Object.assign(document.createElement("a"), { href: URL.createObjectURL(blob), download: `radar-bandi-${new Date().toISOString().slice(0, 10)}.csv` });
+    a.click(); URL.revokeObjectURL(a.href);
+  }
+
+  // ---- eventi -------------------------------------------------------------
+  let timer;
+  el("q").addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(render, 120); });
+  el("svuota").addEventListener("click", () => { el("q").value = ""; render(); el("q").focus(); });
+  document.querySelectorAll(".filtri input, .filtri select").forEach(i => i.addEventListener("change", render));
+  el("reset").addEventListener("click", () => {
+    el("q").value = ""; document.querySelector("input[name=pert][value=media]").checked = true;
+    document.querySelector("input[name=stato][value=aperti]").checked = true;
+    document.querySelectorAll("input[name=terr], input[name=blocco]").forEach(i => i.checked = true);
+    el("ordine").value = "novita"; el("solo-nuovi").checked = false; el("solo-stella").checked = false; render();
+  });
+  el("btn-csv").addEventListener("click", csv);
+  el("btn-fonti").addEventListener("click", () => {
+    const P = el("pannello-fonti"); P.classList.toggle("aperto");
+    el("btn-fonti").classList.toggle("attivo", P.classList.contains("aperto"));
+    el("btn-fonti").setAttribute("aria-expanded", P.classList.contains("aperto"));
+  });
+  el("lista").addEventListener("click", e => {
+    const stella = e.target.closest("[data-stella]");
+    if (stella) { const id = stella.dataset.stella; stelle[id] ? delete stelle[id] : stelle[id] = 1; salva("radar.stelle", stelle); render(); return; }
+    if (e.target.closest(".dettaglio") || e.target.closest("a")) return;
+    const r = e.target.closest(".riga"); if (!r) return;
+    aperto = aperto === r.dataset.id ? null : r.dataset.id; render();
+    if (aperto) document.querySelector(`.riga[data-id="${aperto}"]`)?.scrollIntoView({ block: "nearest" });
+  });
+  el("lista").addEventListener("input", e => {
+    const t = e.target.closest("[data-nota]"); if (!t) return;
+    note[t.dataset.nota] = t.value; salva("radar.note", note);
+  });
+  el("lista").addEventListener("keydown", e => { if (e.key === "Enter" && e.target.classList.contains("riga")) e.target.click(); });
+
+  // ---- avvio -------------------------------------------------------------
+  function ripristinaFiltri() {
+    const f = leggi("radar.filtri", null); if (!f) return;
+    el("q").value = f.testo || "";
+    const setRadio = (n, v) => { const i = document.querySelector(`input[name=${n}][value=${v}]`); if (i) i.checked = true; };
+    setRadio("pert", f.pert); setRadio("stato", f.stato);
+    document.querySelectorAll("input[name=terr]").forEach(i => i.checked = f.terr.includes(i.value));
+    document.querySelectorAll("input[name=blocco]").forEach(i => i.checked = f.blocco.includes(i.value));
+    el("ordine").value = f.ordine || "novita"; el("solo-nuovi").checked = !!f.nuovi; el("solo-stella").checked = !!f.stella;
+  }
+
+  fetch("data/bandi.json?v=" + Date.now()).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(d => {
+    dati = d;
+    if (d.aggiornato) {
+      const quando = new Date(d.aggiornato);
+      const ore = Math.round((Date.now() - quando) / 3600000);
+      el("aggiornato").innerHTML = `Aggiornato <b>${quando.toLocaleString("it-IT", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" })}</b>${d.nuovi_oggi ? ` · ${d.nuovi_oggi} nuovi` : ""}`;
+      if (ore > 48) { el("avviso").hidden = false; el("avviso").textContent = `L'ultimo aggiornamento è di ${Math.floor(ore / 24)} giorni fa: controlla che il workflow "Aggiorna bandi" giri su GitHub (scheda Actions).`; }
+    } else {
+      el("aggiornato").textContent = "Mai aggiornato";
+    }
+    if (d.bandi.length && d.bandi.every(b => b.esempio)) {
+      el("avviso").hidden = false;
+      el("avviso").textContent = "Questi sono dati di esempio. Lancia il workflow \"Aggiorna bandi\" su GitHub (Actions → Run workflow) per riempire il radar con i bandi veri.";
+    }
+    ripristinaFiltri(); pannelloFonti(); render();
+  }).catch(err => {
+    el("aggiornato").textContent = "Dati non caricati";
+    el("lista").innerHTML = `<div class="vuoto"><b>Non riesco a leggere data/bandi.json</b> (${esc(err.message)}).<br>Se stai aprendo il file in locale col doppio clic, il browser blocca la lettura: pubblicalo su GitHub Pages oppure aprilo con un piccolo server (es. <code>python -m http.server</code>).</div>`;
+  });
+})();
+</script>
+</body>
+</html>

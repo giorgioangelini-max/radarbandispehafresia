@@ -1,0 +1,552 @@
+# =====================================================================
+# FONTI DEL RADAR BANDI — Speha Fresia
+# =====================================================================
+# Ogni voce è una fonte controllata ogni mattina.
+#
+#   id          codice breve, unico, senza spazi
+#   nome        come compare nel sito
+#   ente        chi pubblica (compare nella scheda)
+#   blocco      regionale | nazionale | fondi | ue | aggregatori
+#   territorio  sicilia | lazio | nazionale | ue | auto  (auto = lo capisce dal testo)
+#   tipo        rss   → feed RSS/Atom (il più affidabile)
+#               html  → pagina web: prende i link che sembrano bandi/avvisi
+#               ft    → Funding & Tenders Portal UE (API ufficiale)
+#   url         indirizzo da leggere
+#   fallback    (facoltativo) seconda strada se la prima fallisce: {tipo, url}
+#   selettore   (facoltativo, solo html) selettore CSS dei blocchi che contengono
+#               i singoli bandi, per pagine dove il generico prende troppo o poco
+#   verificato  false finché non lo controlli col workflow "Verifica fonti";
+#               è solo un promemoria per te, non cambia il comportamento
+#
+# Per aggiungere una fonte: copia una voce, cambia id/nome/url, salva.
+# Per toglierla: cancella la voce oppure metti  attiva: false
+# =====================================================================
+
+fonti:
+
+  # ------------------------------------------------------------------
+  # REGIONALE — SICILIA
+  # ------------------------------------------------------------------
+  - id: sic-formazione
+    nome: Regione Siciliana – Dip. Formazione Professionale
+    ente: Regione Siciliana
+    blocco: regionale
+    territorio: sicilia
+    tipo: html
+    url: https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-istruzione-formazione-professionale/dipartimento-formazione-professionale
+    verificato: false
+
+  - id: sic-lavoro
+    nome: Regione Siciliana – Dip. Lavoro
+    ente: Regione Siciliana
+    blocco: regionale
+    territorio: sicilia
+    tipo: html
+    url: https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-famiglia-politiche-sociali-lavoro/dipartimento-lavoro-impiego-orientamento-servizi-attivita-formative
+    verificato: false
+
+  - id: sic-famiglia
+    nome: Regione Siciliana – Dip. Famiglia e Politiche Sociali
+    ente: Regione Siciliana
+    blocco: regionale
+    territorio: sicilia
+    tipo: html
+    url: https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-famiglia-politiche-sociali-lavoro/dipartimento-famiglia-politiche-sociali
+    verificato: false
+
+  - id: sic-attivita-produttive
+    nome: Regione Siciliana – Dip. Attività Produttive
+    ente: Regione Siciliana
+    blocco: regionale
+    territorio: sicilia
+    tipo: html
+    url: https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-attivita-produttive/dipartimento-attivita-produttive
+    verificato: false
+
+  - id: sic-fse
+    nome: Sicilia FSE+ 2021-2027
+    ente: Regione Siciliana – PR FSE+
+    blocco: regionale
+    territorio: sicilia
+    tipo: rss
+    url: https://www.sicilia-fse.it/feed
+    fallback: {tipo: html, url: https://www.sicilia-fse.it/}
+    verificato: false
+
+  - id: euroinfosicilia
+    nome: Euroinfosicilia (PR FESR Sicilia)
+    ente: Regione Siciliana – PR FESR
+    blocco: regionale
+    territorio: sicilia
+    tipo: rss
+    url: https://www.euroinfosicilia.it/feed/
+    fallback: {tipo: html, url: https://www.euroinfosicilia.it/}
+    verificato: false
+
+  - id: psr-sicilia
+    nome: PSR / CSR Sicilia 2023-2027
+    ente: Regione Siciliana – Dip. Agricoltura
+    blocco: regionale
+    territorio: sicilia
+    tipo: rss
+    url: https://www.psrsicilia.it/feed/
+    fallback: {tipo: html, url: https://www.psrsicilia.it/}
+    verificato: false
+
+  - id: gurs
+    nome: GURS – Gazzetta Ufficiale Regione Siciliana
+    ente: Regione Siciliana
+    blocco: regionale
+    territorio: sicilia
+    tipo: html
+    url: https://www.gurs.regione.sicilia.it/
+    verificato: false
+
+  - id: cesvop
+    nome: CeSVoP – Centro Servizi Volontariato Palermo
+    ente: CeSVoP
+    blocco: regionale
+    territorio: sicilia
+    tipo: rss
+    url: https://www.cesvop.org/feed/
+    fallback: {tipo: html, url: https://www.cesvop.org/}
+    verificato: false
+
+  - id: csv-etneo
+    nome: CSV Etneo (Catania)
+    ente: CSV Etneo
+    blocco: regionale
+    territorio: sicilia
+    tipo: rss
+    url: https://www.csvetneo.org/feed/
+    fallback: {tipo: html, url: https://www.csvetneo.org/}
+    verificato: false
+
+  - id: camcom-palermo
+    nome: Camera di Commercio Palermo Enna
+    ente: CCIAA Palermo Enna
+    blocco: regionale
+    territorio: sicilia
+    tipo: html
+    url: https://www.pa.camcom.it/
+    verificato: false
+
+  - id: camcom-catania
+    nome: Camera di Commercio Sud Est Sicilia
+    ente: CCIAA Sud Est Sicilia
+    blocco: regionale
+    territorio: sicilia
+    tipo: html
+    url: https://www.ct.camcom.gov.it/
+    verificato: false
+
+  # ------------------------------------------------------------------
+  # REGIONALE — LAZIO
+  # ------------------------------------------------------------------
+  - id: lazio-europa
+    nome: Lazio Europa – Bandi
+    ente: Regione Lazio
+    blocco: regionale
+    territorio: lazio
+    tipo: html
+    url: https://www.lazioeuropa.it/bandi/
+    verificato: false
+
+  - id: lazio-innova
+    nome: Lazio Innova – Bandi
+    ente: Lazio Innova
+    blocco: regionale
+    territorio: lazio
+    tipo: html
+    url: https://www.lazioinnova.it/bandi/
+    verificato: false
+
+  - id: lazio-formazione
+    nome: Regione Lazio – Formazione
+    ente: Regione Lazio
+    blocco: regionale
+    territorio: lazio
+    tipo: html
+    url: https://www.regione.lazio.it/cittadini/formazione
+    verificato: false
+
+  - id: lazio-lavoro
+    nome: Regione Lazio – Lavoro
+    ente: Regione Lazio
+    blocco: regionale
+    territorio: lazio
+    tipo: html
+    url: https://www.regione.lazio.it/cittadini/lavoro
+    verificato: false
+
+  # ------------------------------------------------------------------
+  # NAZIONALE
+  # ------------------------------------------------------------------
+  - id: min-lavoro
+    nome: Ministero del Lavoro – Notizie
+    ente: Ministero del Lavoro e delle Politiche Sociali
+    blocco: nazionale
+    territorio: nazionale
+    tipo: html
+    url: https://www.lavoro.gov.it/notizie
+    verificato: false
+
+  - id: pn-inclusione
+    nome: PN Inclusione e Lotta alla Povertà 2021-2027
+    ente: Ministero del Lavoro
+    blocco: nazionale
+    territorio: nazionale
+    tipo: html
+    url: https://www.lavoro.gov.it/temi-e-priorita/europa-e-fondi-europei/focus-on/pn-inclusione-2021-2027
+    verificato: false
+
+  - id: sviluppo-lavoro-italia
+    nome: Sviluppo Lavoro Italia (ex ANPAL Servizi)
+    ente: Sviluppo Lavoro Italia
+    blocco: nazionale
+    territorio: nazionale
+    tipo: html
+    url: https://www.sviluppolavoroitalia.it/
+    verificato: false
+
+  - id: mim
+    nome: Ministero dell'Istruzione e del Merito – Bandi e avvisi
+    ente: MIM
+    blocco: nazionale
+    territorio: nazionale
+    tipo: html
+    url: https://www.mim.gov.it/web/guest/bandi-e-avvisi
+    fallback: {tipo: html, url: https://www.mim.gov.it/}
+    verificato: false
+
+  - id: mimit
+    nome: MIMIT – Incentivi
+    ente: Ministero delle Imprese e del Made in Italy
+    blocco: nazionale
+    territorio: nazionale
+    tipo: html
+    url: https://www.mimit.gov.it/it/incentivi
+    verificato: false
+
+  - id: invitalia
+    nome: Invitalia – Cosa facciamo
+    ente: Invitalia
+    blocco: nazionale
+    territorio: nazionale
+    tipo: html
+    url: https://www.invitalia.it/cosa-facciamo
+    verificato: false
+
+  - id: formez
+    nome: Formez PA
+    ente: Formez PA
+    blocco: nazionale
+    territorio: nazionale
+    tipo: rss
+    url: https://www.formez.it/rss.xml
+    fallback: {tipo: html, url: https://www.formez.it/}
+    verificato: false
+
+  - id: fondo-repubblica-digitale
+    nome: Fondo per la Repubblica Digitale – Bandi
+    ente: Fondo per la Repubblica Digitale
+    blocco: nazionale
+    territorio: nazionale
+    tipo: rss
+    url: https://www.fondorepubblicadigitale.it/feed/
+    fallback: {tipo: html, url: https://www.fondorepubblicadigitale.it/bandi/}
+    verificato: false
+
+  - id: con-i-bambini
+    nome: Impresa Sociale Con i Bambini – Bandi
+    ente: Con i Bambini
+    blocco: nazionale
+    territorio: nazionale
+    tipo: rss
+    url: https://www.conibambini.org/feed/
+    fallback: {tipo: html, url: https://www.conibambini.org/bandi/}
+    verificato: false
+
+  - id: fondazione-con-il-sud
+    nome: Fondazione CON IL SUD – Bandi
+    ente: Fondazione CON IL SUD
+    blocco: nazionale
+    territorio: nazionale
+    tipo: rss
+    url: https://www.fondazioneconilsud.it/feed/
+    fallback: {tipo: html, url: https://www.fondazioneconilsud.it/bandi/}
+    verificato: false
+
+  - id: cassa-ammende
+    nome: Cassa delle Ammende
+    ente: Cassa delle Ammende – Ministero della Giustizia
+    blocco: nazionale
+    territorio: nazionale
+    tipo: html
+    url: https://www.cassaammende.it/
+    verificato: false
+
+  - id: politiche-giovanili
+    nome: Dipartimento Politiche Giovanili – Avvisi e bandi
+    ente: Presidenza del Consiglio – Politiche Giovanili
+    blocco: nazionale
+    territorio: nazionale
+    tipo: html
+    url: https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/
+    verificato: false
+
+  - id: pari-opportunita
+    nome: Dipartimento Pari Opportunità – Avvisi
+    ente: Presidenza del Consiglio – Pari Opportunità
+    blocco: nazionale
+    territorio: nazionale
+    tipo: html
+    url: https://www.pariopportunita.gov.it/it/notizie-e-comunicati/avvisi-e-bandi/
+    fallback: {tipo: html, url: https://www.pariopportunita.gov.it/}
+    verificato: false
+
+  - id: inapp
+    nome: INAPP
+    ente: INAPP
+    blocco: nazionale
+    territorio: nazionale
+    tipo: html
+    url: https://www.inapp.gov.it/
+    verificato: false
+
+  - id: pid-camcom
+    nome: Punto Impresa Digitale (Unioncamere)
+    ente: Unioncamere – PID
+    blocco: nazionale
+    territorio: nazionale
+    tipo: html
+    url: https://www.puntoimpresadigitale.camcom.it/
+    verificato: false
+
+  - id: bi-rex
+    nome: BI-REX Competence Center – Bandi
+    ente: BI-REX
+    blocco: nazionale
+    territorio: nazionale
+    tipo: html
+    url: https://bi-rex.it/bandi/
+    fallback: {tipo: html, url: https://bi-rex.it/}
+    verificato: false
+
+  - id: artes
+    nome: ARTES 4.0 / 5.0 Competence Center
+    ente: ARTES
+    blocco: nazionale
+    territorio: nazionale
+    tipo: html
+    url: https://artes4.it/
+    verificato: false
+
+  - id: made-cc
+    nome: MADE Competence Center – Bandi
+    ente: MADE
+    blocco: nazionale
+    territorio: nazionale
+    tipo: html
+    url: https://www.made-cc.eu/it/bandi/
+    fallback: {tipo: html, url: https://www.made-cc.eu/}
+    verificato: false
+
+  # ------------------------------------------------------------------
+  # FONDI INTERPROFESSIONALI E BILATERALI
+  # ------------------------------------------------------------------
+  - id: foncoop
+    nome: Foncoop
+    ente: Foncoop
+    blocco: fondi
+    territorio: nazionale
+    tipo: rss
+    url: https://www.foncoop.coop/feed/
+    fallback: {tipo: html, url: https://www.foncoop.coop/}
+    verificato: false
+
+  - id: formatemp
+    nome: Forma.Temp
+    ente: Forma.Temp
+    blocco: fondi
+    territorio: nazionale
+    tipo: html
+    url: https://www.formatemp.it/
+    verificato: false
+
+  - id: fondimpresa
+    nome: Fondimpresa – Avvisi
+    ente: Fondimpresa
+    blocco: fondi
+    territorio: nazionale
+    tipo: html
+    url: https://www.fondimpresa.it/
+    verificato: false
+
+  - id: forte
+    nome: For.Te – Avvisi
+    ente: For.Te
+    blocco: fondi
+    territorio: nazionale
+    tipo: html
+    url: https://www.fondoforte.it/
+    verificato: false
+
+  - id: fonarcom
+    nome: FonARCom – Avvisi
+    ente: FonARCom
+    blocco: fondi
+    territorio: nazionale
+    tipo: html
+    url: https://www.fonarcom.it/
+    verificato: false
+
+  - id: fondoprofessioni
+    nome: Fondoprofessioni – Avvisi
+    ente: Fondoprofessioni
+    blocco: fondi
+    territorio: nazionale
+    tipo: html
+    url: https://www.fondoprofessioni.it/
+    verificato: false
+
+  - id: fondirigenti
+    nome: Fondirigenti – Avvisi
+    ente: Fondirigenti
+    blocco: fondi
+    territorio: nazionale
+    tipo: html
+    url: https://www.fondirigenti.it/
+    verificato: false
+
+  - id: fonter
+    nome: Fon.Ter – Avvisi
+    ente: Fon.Ter
+    blocco: fondi
+    territorio: nazionale
+    tipo: html
+    url: https://www.fonter.it/
+    verificato: false
+
+  # ------------------------------------------------------------------
+  # UNIONE EUROPEA
+  # ------------------------------------------------------------------
+  - id: ft-portal
+    nome: Funding & Tenders Portal (CERV, Erasmus+, ESF+, EaSI, AMIF, Digital)
+    ente: Commissione Europea
+    blocco: ue
+    territorio: ue
+    tipo: ft
+    url: https://api.tech.ec.europa.eu/search-api/prod/rest/search
+    # Tiene solo le call il cui identificativo inizia così (il portale ha
+    # centinaia di topic Horizon che a Speha non servono):
+    prefissi: [CERV, ERASMUS, ESF, EASI, AMIF, JUST, DIGITAL, CREA, EUAF]
+    verificato: false
+
+  - id: erasmusplus-indire
+    nome: Erasmus+ Italia (INDIRE)
+    ente: Agenzia Nazionale Erasmus+ INDIRE
+    blocco: ue
+    territorio: ue
+    tipo: rss
+    url: https://www.erasmusplus.it/feed/
+    fallback: {tipo: html, url: https://www.erasmusplus.it/}
+    verificato: false
+
+  - id: agenzia-giovani
+    nome: Agenzia Nazionale per i Giovani
+    ente: ANG
+    blocco: ue
+    territorio: ue
+    tipo: rss
+    url: https://agenziagiovani.it/feed/
+    fallback: {tipo: html, url: https://agenziagiovani.it/}
+    verificato: false
+
+  - id: interreg-italia-malta
+    nome: Interreg Italia-Malta
+    ente: Interreg VI-A Italia-Malta
+    blocco: ue
+    territorio: ue
+    tipo: html
+    url: https://italiamalta.eu/
+    verificato: false
+
+  - id: interreg-euro-med
+    nome: Interreg Euro-MED – Calls
+    ente: Interreg Euro-MED
+    blocco: ue
+    territorio: ue
+    tipo: html
+    url: https://interreg-euro-med.eu/en/calls/
+    verificato: false
+
+  - id: interreg-next-med
+    nome: Interreg NEXT MED
+    ente: Interreg NEXT MED
+    blocco: ue
+    territorio: ue
+    tipo: html
+    url: https://www.enicbcmed.eu/
+    verificato: false
+
+  # ------------------------------------------------------------------
+  # AGGREGATORI
+  # ------------------------------------------------------------------
+  - id: italianonprofit
+    nome: Italia non profit – Bandi
+    ente: Italia non profit
+    blocco: aggregatori
+    territorio: auto
+    tipo: rss
+    url: https://italianonprofit.it/feed/
+    fallback: {tipo: html, url: https://italianonprofit.it/bandi/}
+    verificato: false
+
+  - id: csvnet
+    nome: CSVnet – Infobandi
+    ente: CSVnet
+    blocco: aggregatori
+    territorio: auto
+    tipo: html
+    url: https://www.csvnet.it/
+    verificato: false
+
+  - id: fasi
+    nome: FASI.biz
+    ente: FASI.biz
+    blocco: aggregatori
+    territorio: auto
+    tipo: html
+    url: https://www.fasi.biz/it/notizie.html
+    fallback: {tipo: html, url: https://www.fasi.biz/}
+    verificato: false
+
+  - id: cantiere-terzo-settore
+    nome: Cantiere Terzo Settore
+    ente: Cantiere Terzo Settore
+    blocco: aggregatori
+    territorio: auto
+    tipo: rss
+    url: https://www.cantiereterzosettore.it/feed/
+    fallback: {tipo: html, url: https://www.cantiereterzosettore.it/}
+    verificato: false
+
+  - id: legacoop-sicilia
+    nome: Legacoop Sicilia
+    ente: Legacoop Sicilia
+    blocco: aggregatori
+    territorio: sicilia
+    tipo: rss
+    url: https://www.legacoopsicilia.coop/feed/
+    fallback: {tipo: html, url: https://www.legacoopsicilia.coop/}
+    verificato: false
+
+  - id: confcooperative-sicilia
+    nome: Confcooperative Sicilia
+    ente: Confcooperative Sicilia
+    blocco: aggregatori
+    territorio: sicilia
+    tipo: html
+    url: https://sicilia.confcooperative.it/
+    verificato: false
