@@ -1,0 +1,26 @@
+name: Aggiorna bandi
+
+on:
+  schedule:
+    - cron: "30 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  aggiorna:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python raccogli.py
+      - run: |
+          git config user.name "radar-bandi"
+          git config user.email "radar-bandi@users.noreply.github.com"
+          git add data/bandi.json
+          git diff --cached --quiet || (git commit -m "Aggiornamento bandi" && git push)
+        
