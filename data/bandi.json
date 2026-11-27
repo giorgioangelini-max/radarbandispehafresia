@@ -1,7 +1,7 @@
 {
- "aggiornato": "2026-11-26T14:13:29+00:00",
- "totale": 1085,
- "nuovi_oggi": 15,
+ "aggiornato": "2026-11-27T14:11:10+00:00",
+ "totale": 1103,
+ "nuovi_oggi": 18,
  "fonti": [
   {
    "id": "csvnet",
@@ -12,8 +12,8 @@
    "nuovi": 0,
    "via": null,
    "errore": "html: pagina letta ma nessun bando riconosciuto",
-   "controllato": "2026-11-26",
-   "secondi": 2.6,
+   "controllato": "2026-11-27",
+   "secondi": 1.8,
    "ultimo_ok": "2026-11-12"
   },
   {
@@ -25,9 +25,9 @@
    "nuovi": 0,
    "via": "rss https://www.cantiereterzosettore.it/feed/",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 1.3,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 0.9,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "confcooperative-sicilia",
@@ -38,9 +38,9 @@
    "nuovi": 0,
    "via": "html https://sicilia.confcooperative.it/",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 0.5,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 0.4,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "fasi",
@@ -51,8 +51,8 @@
    "nuovi": 0,
    "via": null,
    "errore": "html: HTTPError: 502 Server Error: Bad Gateway for url: https://www.fasi.biz/",
-   "controllato": "2026-11-26",
-   "secondi": 44.8,
+   "controllato": "2026-11-27",
+   "secondi": 44.7,
    "ultimo_ok": null
   },
   {
@@ -64,8 +64,8 @@
    "nuovi": 0,
    "via": null,
    "errore": "html: HTTPError: 404 Client Error: Not Found for url: https://italianonprofit.it/bandi/",
-   "controllato": "2026-11-26",
-   "secondi": 11.3,
+   "controllato": "2026-11-27",
+   "secondi": 10.3,
    "ultimo_ok": null
   },
   {
@@ -77,8 +77,8 @@
    "nuovi": 0,
    "via": null,
    "errore": "html: ConnectionError: HTTPSConnectionPool(host='www.legacoopsicilia.coop', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.legac",
-   "controllato": "2026-11-26",
-   "secondi": 8.2,
+   "controllato": "2026-11-27",
+   "secondi": 8.1,
    "ultimo_ok": null
   },
   {
@@ -90,9 +90,9 @@
    "nuovi": 0,
    "via": "html https://www.fonter.it/",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 0.5,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 0.3,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "fonarcom",
@@ -103,9 +103,9 @@
    "nuovi": 0,
    "via": "html https://www.fonarcom.it/",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 2.7,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 2.2,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "foncoop",
@@ -116,9 +116,9 @@
    "nuovi": 0,
    "via": "rss https://www.foncoop.coop/feed/",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 2.2,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 1.4,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "fondimpresa",
@@ -129,8 +129,8 @@
    "nuovi": 0,
    "via": null,
    "errore": "html: ConnectTimeout: HTTPSConnectionPool(host='www.fondimpresa.it', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fondimpresa",
-   "controllato": "2026-11-26",
-   "secondi": 64.9,
+   "controllato": "2026-11-27",
+   "secondi": 64.5,
    "ultimo_ok": "2026-11-08"
   },
   {
@@ -142,8 +142,8 @@
    "nuovi": 0,
    "via": null,
    "errore": "html: pagina letta ma nessun bando riconosciuto",
-   "controllato": "2026-11-26",
-   "secondi": 1.1,
+   "controllato": "2026-11-27",
+   "secondi": 0.9,
    "ultimo_ok": null
   },
   {
@@ -155,9 +155,9 @@
    "nuovi": 0,
    "via": "html https://www.fondoprofessioni.it/",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 3.2,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 2.9,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "forte",
@@ -168,8 +168,8 @@
    "nuovi": 0,
    "via": null,
    "errore": "html: pagina letta ma nessun bando riconosciuto",
-   "controllato": "2026-11-26",
-   "secondi": 3.1,
+   "controllato": "2026-11-27",
+   "secondi": 2.6,
    "ultimo_ok": "2026-09-30"
   },
   {
@@ -181,9 +181,9 @@
    "nuovi": 0,
    "via": "html https://www.formatemp.it/",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 1.2,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 0.8,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "artes",
@@ -194,8 +194,8 @@
    "nuovi": 0,
    "via": null,
    "errore": "html: pagina letta ma nessun bando riconosciuto",
-   "controllato": "2026-11-26",
-   "secondi": 3.2,
+   "controllato": "2026-11-27",
+   "secondi": 2.1,
    "ultimo_ok": null
   },
   {
@@ -207,8 +207,8 @@
    "nuovi": 0,
    "via": null,
    "errore": "html: pagina letta ma nessun bando riconosciuto",
-   "controllato": "2026-11-26",
-   "secondi": 1.8,
+   "controllato": "2026-11-27",
+   "secondi": 5.8,
    "ultimo_ok": null
   },
   {
@@ -220,8 +220,8 @@
    "nuovi": 0,
    "via": null,
    "errore": "html: ConnectionError: HTTPSConnectionPool(host='www.cassaammende.it', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.cassaammen",
-   "controllato": "2026-11-26",
-   "secondi": 4.3,
+   "controllato": "2026-11-27",
+   "secondi": 4.2,
    "ultimo_ok": null
   },
   {
@@ -233,9 +233,9 @@
    "nuovi": 0,
    "via": "html https://www.pariopportunita.gov.it/",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 8.3,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 7.1,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "politiche-giovanili",
@@ -246,9 +246,9 @@
    "nuovi": 0,
    "via": "html https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 0.9,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 1.3,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "fondazione-con-il-sud",
@@ -259,9 +259,9 @@
    "nuovi": 0,
    "via": "rss https://www.fondazioneconilsud.it/feed/",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 1.7,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 1.4,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "fondo-repubblica-digitale",
@@ -272,9 +272,9 @@
    "nuovi": 0,
    "via": "rss https://www.fondorepubblicadigitale.it/feed/",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 1.3,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 1.0,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "formez",
@@ -285,8 +285,8 @@
    "nuovi": 0,
    "via": null,
    "errore": "html: SSLError: HTTPSConnectionPool(host='www.formez.it', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_",
-   "controllato": "2026-11-26",
-   "secondi": 10.7,
+   "controllato": "2026-11-27",
+   "secondi": 9.7,
    "ultimo_ok": null
   },
   {
@@ -298,8 +298,8 @@
    "nuovi": 0,
    "via": null,
    "errore": "html: pagina letta ma nessun bando riconosciuto",
-   "controllato": "2026-11-26",
-   "secondi": 1.9,
+   "controllato": "2026-11-27",
+   "secondi": 1.4,
    "ultimo_ok": "2026-09-23"
   },
   {
@@ -308,12 +308,12 @@
    "blocco": "nazionale",
    "stato": "ok",
    "trovati": 10,
-   "nuovi": 1,
+   "nuovi": 0,
    "via": "rss https://www.conibambini.org/feed/",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 0.7,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 1.1,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "invitalia",
@@ -324,8 +324,8 @@
    "nuovi": 0,
    "via": null,
    "errore": "html: HTTPError: 404 Client Error: Not Found for url: https://www.invitalia.it/chi-siamo/cosa-facciamo",
-   "controllato": "2026-11-26",
-   "secondi": 6.3,
+   "controllato": "2026-11-27",
+   "secondi": 5.7,
    "ultimo_ok": null
   },
   {
@@ -337,9 +337,9 @@
    "nuovi": 0,
    "via": "html https://www.made-cc.eu/",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 4.6,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 3.6,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "mimit",
@@ -350,8 +350,8 @@
    "nuovi": 0,
    "via": null,
    "errore": "html: ConnectTimeout: HTTPSConnectionPool(host='www.mimit.gov.it', port=443): Max retries exceeded with url: /it/incentivi (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.m",
-   "controllato": "2026-11-26",
-   "secondi": 64.9,
+   "controllato": "2026-11-27",
+   "secondi": 64.5,
    "ultimo_ok": "2026-10-16"
   },
   {
@@ -363,22 +363,22 @@
    "nuovi": 0,
    "via": "html https://www.lavoro.gov.it/notizie",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 2.0,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 0.6,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "mim",
    "nome": "Ministero dell'Istruzione e del Merito – Bandi e avvisi",
    "blocco": "nazionale",
    "stato": "ok",
-   "trovati": 2,
-   "nuovi": 2,
+   "trovati": 5,
+   "nuovi": 3,
    "via": "html https://www.mim.gov.it/",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 6.3,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 5.3,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "pn-inclusione",
@@ -389,8 +389,8 @@
    "nuovi": 0,
    "via": null,
    "errore": "html: HTTPError: 404 Client Error: Not Found for url: https://www.lavoro.gov.it/temi-e-priorita/europa-e-fondi-europei/focus-on/pn-inclusione-2021-2027",
-   "controllato": "2026-11-26",
-   "secondi": 5.1,
+   "controllato": "2026-11-27",
+   "secondi": 4.5,
    "ultimo_ok": null
   },
   {
@@ -402,9 +402,9 @@
    "nuovi": 0,
    "via": "html https://www.puntoimpresadigitale.camcom.it/",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 5.1,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 1.4,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "sviluppo-lavoro-italia",
@@ -412,12 +412,12 @@
    "blocco": "nazionale",
    "stato": "ok",
    "trovati": 2,
-   "nuovi": 1,
+   "nuovi": 0,
    "via": "html https://www.sviluppolavoroitalia.it/",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 3.1,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 1.3,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "csv-etneo",
@@ -428,9 +428,9 @@
    "nuovi": 0,
    "via": "html https://www.csvetneo.org/",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 7.1,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 6.5,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "camcom-palermo",
@@ -441,8 +441,8 @@
    "nuovi": 0,
    "via": null,
    "errore": "html: ConnectTimeout: HTTPSConnectionPool(host='www.pa.camcom.it', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.pa.camcom.it'",
-   "controllato": "2026-11-26",
-   "secondi": 65.0,
+   "controllato": "2026-11-27",
+   "secondi": 64.5,
    "ultimo_ok": null
   },
   {
@@ -454,8 +454,8 @@
    "nuovi": 0,
    "via": null,
    "errore": "html: ConnectionError: HTTPSConnectionPool(host='www.ct.camcom.gov.it', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.ct.camcom",
-   "controllato": "2026-11-26",
-   "secondi": 5.2,
+   "controllato": "2026-11-27",
+   "secondi": 4.7,
    "ultimo_ok": null
   },
   {
@@ -464,12 +464,12 @@
    "blocco": "regionale",
    "stato": "ok",
    "trovati": 10,
-   "nuovi": 0,
+   "nuovi": 3,
    "via": "rss https://www.cesvop.org/feed/",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 1.2,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 0.9,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "euroinfosicilia",
@@ -480,9 +480,9 @@
    "nuovi": 10,
    "via": "rss https://www.euroinfosicilia.it/feed/",
    "errore": null,
-   "controllato": "2026-11-26",
+   "controllato": "2026-11-27",
    "secondi": 1.6,
-   "ultimo_ok": "2026-11-26"
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "gurs",
@@ -493,8 +493,8 @@
    "nuovi": 0,
    "via": null,
    "errore": "html: ConnectTimeout: HTTPSConnectionPool(host='www.gurs.regione.sicilia.it', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.gu",
-   "controllato": "2026-11-26",
-   "secondi": 64.7,
+   "controllato": "2026-11-27",
+   "secondi": 64.5,
    "ultimo_ok": null
   },
   {
@@ -503,12 +503,12 @@
    "blocco": "regionale",
    "stato": "ok",
    "trovati": 10,
-   "nuovi": 0,
+   "nuovi": 1,
    "via": "html https://www.lazioeuropa.it/bandi/",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 1.3,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 1.0,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "lazio-innova",
@@ -519,8 +519,8 @@
    "nuovi": 0,
    "via": null,
    "errore": "html: pagina letta ma nessun bando riconosciuto",
-   "controllato": "2026-11-26",
-   "secondi": 0.9,
+   "controllato": "2026-11-27",
+   "secondi": 0.6,
    "ultimo_ok": null
   },
   {
@@ -532,9 +532,9 @@
    "nuovi": 0,
    "via": "rss https://www.psrsicilia.it/feed/",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 0.8,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 0.6,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "lazio-formazione",
@@ -545,22 +545,22 @@
    "nuovi": 0,
    "via": "html https://www.regione.lazio.it/cittadini/formazione",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 0.9,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 0.7,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "lazio-lavoro",
    "nome": "Regione Lazio – Lavoro",
    "blocco": "regionale",
    "stato": "ok",
-   "trovati": 6,
-   "nuovi": 0,
+   "trovati": 7,
+   "nuovi": 1,
    "via": "html https://www.regione.lazio.it/cittadini/lavoro",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 0.7,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 0.6,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "sic-attivita-produttive",
@@ -571,8 +571,8 @@
    "nuovi": 0,
    "via": null,
    "errore": "html: pagina letta ma nessun bando riconosciuto",
-   "controllato": "2026-11-26",
-   "secondi": 1.7,
+   "controllato": "2026-11-27",
+   "secondi": 1.0,
    "ultimo_ok": "2026-11-25"
   },
   {
@@ -580,13 +580,13 @@
    "nome": "Regione Siciliana – Dip. Famiglia e Politiche Sociali",
    "blocco": "regionale",
    "stato": "ok",
-   "trovati": 2,
+   "trovati": 1,
    "nuovi": 0,
    "via": "html https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-famiglia-politiche-sociali-lavoro/dipartimento-famiglia-politiche-sociali",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 2.1,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 1.0,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "sic-formazione",
@@ -597,22 +597,22 @@
    "nuovi": 0,
    "via": "html https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-istruzione-formazione-professionale/dipartimento-formazione-professionale",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 2.1,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 1.0,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "sic-lavoro",
    "nome": "Regione Siciliana – Dip. Lavoro",
    "blocco": "regionale",
    "stato": "ok",
-   "trovati": 2,
-   "nuovi": 1,
+   "trovati": 1,
+   "nuovi": 0,
    "via": "html https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-famiglia-politiche-sociali-lavoro/dipartimento-lavoro-impiego-orientamento-servizi-attivita-formative",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 2.0,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 1.4,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "sic-fse",
@@ -623,9 +623,9 @@
    "nuovi": 0,
    "via": "html https://www.sicilia-fse.it/",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 7.8,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 7.0,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "agenzia-giovani",
@@ -636,9 +636,9 @@
    "nuovi": 0,
    "via": "rss https://agenziagiovani.it/feed/",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 1.7,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 1.2,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "erasmusplus-indire",
@@ -649,9 +649,9 @@
    "nuovi": 0,
    "via": "rss https://www.erasmusplus.it/feed/",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 5.7,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 4.1,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "ft-portal",
@@ -662,8 +662,8 @@
    "nuovi": 0,
    "via": null,
    "errore": "ft: HTTPError: 500 Server Error:  for url: https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=%2A%2A%2A&pageSize=100&pageNumber=1",
-   "controllato": "2026-11-26",
-   "secondi": 0.5,
+   "controllato": "2026-11-27",
+   "secondi": 0.4,
    "ultimo_ok": null
   },
   {
@@ -675,8 +675,8 @@
    "nuovi": 0,
    "via": null,
    "errore": "html: HTTPError: 404 Client Error: Not Found for url: https://interreg-euro-med.eu/en/calls/",
-   "controllato": "2026-11-26",
-   "secondi": 6.8,
+   "controllato": "2026-11-27",
+   "secondi": 6.6,
    "ultimo_ok": null
   },
   {
@@ -688,9 +688,9 @@
    "nuovi": 0,
    "via": "html https://italiamalta.eu/",
    "errore": null,
-   "controllato": "2026-11-26",
-   "secondi": 1.5,
-   "ultimo_ok": "2026-11-26"
+   "controllato": "2026-11-27",
+   "secondi": 1.4,
+   "ultimo_ok": "2026-11-27"
   },
   {
    "id": "interreg-next-med",
@@ -701,12 +701,383 @@
    "nuovi": 0,
    "via": null,
    "errore": "html: SSLError: HTTPSConnectionPool(host='www.enicbcmed.eu', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING]",
-   "controllato": "2026-11-26",
-   "secondi": 6.4,
+   "controllato": "2026-11-27",
+   "secondi": 6.1,
    "ultimo_ok": null
   }
  ],
  "bandi": [
+  {
+   "id": "63477f8a5cc0",
+   "titolo": "Intelligenza artificiale in associazione: 7 video e un test per imparare a usarla bene",
+   "url": "https://www.cesvop.org/intelligenza-artificiale-in-associazione-7-video-e-un-test-per-imparare-a-usarla-bene/",
+   "sommario": "Aperte le iscrizioni per il primo percorso formativo per l'alfabetizzazione AI delle piccole e medie realtà NoProfit. C'è tempo fino al 3 dicembre! L'articolo Intelligenza artificiale in associazione: 7 video e un test per imparare a usarla bene proviene da CeSVoP .",
+   "fonte_id": "cesvop",
+   "fonte": "CeSVoP – Centro Servizi Volontariato Palermo",
+   "ente": "CeSVoP",
+   "blocco": "regionale",
+   "territorio": "sicilia",
+   "pubblicato": "2026-11-26",
+   "scadenza": null,
+   "sportello": false,
+   "punteggio": 18,
+   "pertinenza": "alta",
+   "categorie": [
+    "Formazione",
+    "Terzo settore / sociale",
+    "Digitale / consulenza"
+   ],
+   "ultima_visto": "2026-11-27",
+   "prima_visto": "2026-11-27",
+   "note": ""
+  },
+  {
+   "id": "1f472cebc326",
+   "titolo": "Piani Formativi per l’integrazione e il potenziamento degli interventi del PAR GOL (GOL 4 – II Edizione)",
+   "url": "https://www.lazioeuropa.it/bandi/piani-formativi-per-lintegrazione-e-il-potenziamento-degli-interventi-del-par-gol-gol-4-ii-edizione/",
+   "sommario": "",
+   "fonte_id": "lazio-europa",
+   "fonte": "Lazio Europa – Bandi",
+   "ente": "Regione Lazio",
+   "blocco": "regionale",
+   "territorio": "lazio",
+   "pubblicato": null,
+   "scadenza": null,
+   "sportello": false,
+   "punteggio": 12,
+   "pertinenza": "alta",
+   "categorie": [
+    "Formazione",
+    "Politiche attive"
+   ],
+   "ultima_visto": "2026-11-27",
+   "prima_visto": "2026-11-27",
+   "note": ""
+  },
+  {
+   "id": "f92f81759c92",
+   "titolo": "Una mano a chi sostiene: il bando di Fondazione Cattolica",
+   "url": "https://www.cesvop.org/una-mano-a-chi-sostiene-il-bando-di-fondazione-cattolica/",
+   "sommario": "Fondazione Cattolica, apre le candidature per l'edizione 2026/27 al suo bando: Una mano a chi sostiene per enti non profit ed ecclesiastici. Contributi fino a 20.000 euro. Domande entro il 16/02/2027 E' possibile candidare un solo progetto inerente alle seguenti tematiche: ASSISTENZA E SOLIDARIETÀ SOCIALE - EDUCAZIONE, ISTRUZIONE E FORMAZIONE – CULTURA. euro. Domande entro il 16/02/2027. L'articolo Una mano a chi sostiene: il bando di Fondazione Cattolica proviene da CeSVoP .",
+   "fonte_id": "cesvop",
+   "fonte": "CeSVoP – Centro Servizi Volontariato Palermo",
+   "ente": "CeSVoP",
+   "blocco": "regionale",
+   "territorio": "sicilia",
+   "pubblicato": "2026-11-27",
+   "scadenza": "2027-02-16",
+   "sportello": false,
+   "punteggio": 3,
+   "pertinenza": "media",
+   "categorie": [
+    "Formazione"
+   ],
+   "ultima_visto": "2026-11-27",
+   "prima_visto": "2026-11-27",
+   "note": ""
+  },
+  {
+   "id": "279c4ef342b7",
+   "titolo": "Otto per Mille Chiesa Valdese: Bando 2027",
+   "url": "https://www.cesvop.org/otto-per-mille-chiesa-valdese-bando-2027/",
+   "sommario": "A gennaio 2027 si possono presentare le proposte progettuali sulla piattaforma JUNO. Contributi fino a 20.000 euro per i nuovi beneficiari e per gli enti con entrate inferiori ai 100.000 euro. Domande entro il 29/01/2027 L'articolo Otto per Mille Chiesa Valdese: Bando 2027 proviene da CeSVoP .",
+   "fonte_id": "cesvop",
+   "fonte": "CeSVoP – Centro Servizi Volontariato Palermo",
+   "ente": "CeSVoP",
+   "blocco": "regionale",
+   "territorio": "sicilia",
+   "pubblicato": "2026-11-27",
+   "scadenza": "2027-01-29",
+   "sportello": false,
+   "punteggio": 3,
+   "pertinenza": "media",
+   "categorie": [
+    "Digitale / consulenza"
+   ],
+   "ultima_visto": "2026-11-27",
+   "prima_visto": "2026-11-27",
+   "note": ""
+  },
+  {
+   "id": "8a5bd7d7a193",
+   "titolo": "PO FESR 2014/2020 – POC 2014/2020 – Portale Regionale Istituzionale – Sostituzione RUP",
+   "url": "https://www.euroinfosicilia.it/po-fesr-2014-2020-poc-2014-2020-portale-regionale-istituzionale-sostituzione-rup/",
+   "sommario": "L’Autorità per l’Innovazione Tecnologica pubblica il DDG n. 453 del 24/11/2026 con cui è nominato RUP il dott. Vincenzo Lo Piccolo in sostituzione del precedente, cessato per cancellazione dai ruoli, per l’intervento “Portale Regionale Istituzionale”. L'articolo PO FESR 2014/2020 – POC 2014/2020 – Portale Regionale Istituzionale – Sostituzione RUP proviene da EuroInfoSicilia .",
+   "fonte_id": "euroinfosicilia",
+   "fonte": "Euroinfosicilia (PR FESR Sicilia)",
+   "ente": "Regione Siciliana – PR FESR",
+   "blocco": "regionale",
+   "territorio": "sicilia",
+   "pubblicato": "2026-11-27",
+   "scadenza": null,
+   "sportello": false,
+   "punteggio": 0,
+   "pertinenza": "bassa",
+   "categorie": [],
+   "ultima_visto": "2026-11-27",
+   "prima_visto": "2026-11-27",
+   "note": ""
+  },
+  {
+   "id": "e1ddf6e632aa",
+   "titolo": "PR FESR 2021/2027 – Azione 2.4.5 – Infrastruttura eliportuale Via Campania – Comune di Salaparuta (TP) – Impegno e finanziamento",
+   "url": "https://www.euroinfosicilia.it/pr-fesr-2021-2027-azione-2-4-5-infrastruttura-eliportuale-via-campania-comune-di-salaparuta-tp-impegno-e-finanziamento/",
+   "sommario": "Il Dipartimento della Protezione Civile ha pubblicato il DDG n. 1395 del 25/11/2026 con il quale approva il disciplinare, finanzia e impegna la somma di euro 500.000 in favore del Comune beneficiario di Salaparuta (TP) , […] L'articolo PR FESR 2021/2027 – Azione 2.4.5 – Infrastruttura eliportuale Via Campania – Comune di Salaparuta (TP) – Impegno e finanziamento proviene da EuroInfoSicilia .",
+   "fonte_id": "euroinfosicilia",
+   "fonte": "Euroinfosicilia (PR FESR Sicilia)",
+   "ente": "Regione Siciliana – PR FESR",
+   "blocco": "regionale",
+   "territorio": "sicilia",
+   "pubblicato": "2026-11-27",
+   "scadenza": null,
+   "sportello": false,
+   "punteggio": 0,
+   "pertinenza": "bassa",
+   "categorie": [],
+   "ultima_visto": "2026-11-27",
+   "prima_visto": "2026-11-27",
+   "note": ""
+  },
+  {
+   "id": "b38075026a27",
+   "titolo": "POC 2014/2020 – Realizzazione di due vasche di sedimentazione territorio urbano del Comune di Furci Siculo – Finanziamento e impegno somme",
+   "url": "https://www.euroinfosicilia.it/poc-2014-2020-realizzazione-di-due-vasche-di-sedimentazione-territorio-urbano-del-comune-di-furci-siculo-finanziamento-e-impegno-somme/",
+   "sommario": "Il Dipartimento della Protezione Civile ha pubblicato il DDG n. 1388 del 25/11/2026 con il quale finanzia e impegna alle condizioni del disciplinare, l’intervento denominato “Realizzazione di due vasche di sedimentazione in punti strategisti del territorio […] L'articolo POC 2014/2020 – Realizzazione di due vasche di sedimentazione territorio urbano del Comune di Furci Siculo – Finanziamento e impegno somme proviene da EuroInfoSicilia .",
+   "fonte_id": "euroinfosicilia",
+   "fonte": "Euroinfosicilia (PR FESR Sicilia)",
+   "ente": "Regione Siciliana – PR FESR",
+   "blocco": "regionale",
+   "territorio": "sicilia",
+   "pubblicato": "2026-11-27",
+   "scadenza": null,
+   "sportello": false,
+   "punteggio": 0,
+   "pertinenza": "bassa",
+   "categorie": [],
+   "ultima_visto": "2026-11-27",
+   "prima_visto": "2026-11-27",
+   "note": ""
+  },
+  {
+   "id": "fb42cd291f22",
+   "titolo": "PR FESR 2021/2027 – Azione 2.4.1.E – Contrasto al dissesto idrogeologico – Territoriali – Accertamento in entrata",
+   "url": "https://www.euroinfosicilia.it/pr-fesr-2021-2027-azione-2-4-1-e-contrasto-al-dissesto-idrogeologico-territoriali-accertamento-in-entrata/",
+   "sommario": "L’Autorità di Bacino del Distretto Idrografico della Sicilia pubblica il DSG n. 1099 del 11/11/2026 di accertamento somme in entrata relativo a  “Interventi per il contrasto al dissesto idrogeologico – Territoriali” – Capitoli in entrata 8318, […] L'articolo PR FESR 2021/2027 – Azione 2.4.1.E – Contrasto al dissesto idrogeologico – Territoriali – Accertamento in entrata proviene da EuroInfoSicilia .",
+   "fonte_id": "euroinfosicilia",
+   "fonte": "Euroinfosicilia (PR FESR Sicilia)",
+   "ente": "Regione Siciliana – PR FESR",
+   "blocco": "regionale",
+   "territorio": "sicilia",
+   "pubblicato": "2026-11-27",
+   "scadenza": null,
+   "sportello": false,
+   "punteggio": 0,
+   "pertinenza": "bassa",
+   "categorie": [],
+   "ultima_visto": "2026-11-27",
+   "prima_visto": "2026-11-27",
+   "note": ""
+  },
+  {
+   "id": "bafee8ae0e5e",
+   "titolo": "PR FESR 2021/2027 – Azione 1.2.1 – BIOSIRIS (Base Informativa ed Operativa per lo Sviluppo Innovativo Rurale in Sicilia) – Annullamento DDG n. 409 e accertamento entrate",
+   "url": "https://www.euroinfosicilia.it/pr-fesr-2021-2027-azione-1-2-1-biosiris-base-informativa-ed-operativa-per-lo-sviluppo-innovativo-rurale-in-sicilia-annullamento-ddg-n-409-e-accertamento-entrate/",
+   "sommario": "L’Autorità per l’Innovazione Tecnologica pubblica il DDG n. 446 del 20/11/2026 con cui è annullato il DDG n.409 del 10/11/2026 ed è disposto l’accertamento in entrata per assicurare l’integrale copertura finanziaria per l’intervento “BIOSIRIS (Base Informativa ed Operativa per […] L'articolo PR FESR 2021/2027 – Azione 1.2.1 – BIOSIRIS (Base Informativa ed Operativa per lo Sviluppo Innovativo Rurale in Sicilia) – Annullamento DDG n. 409 e accertamento entrate proviene da EuroInfoSicilia .",
+   "fonte_id": "euroinfosicilia",
+   "fonte": "Euroinfosicilia (PR FESR Sicilia)",
+   "ente": "Regione Siciliana – PR FESR",
+   "blocco": "regionale",
+   "territorio": "sicilia",
+   "pubblicato": "2026-11-27",
+   "scadenza": null,
+   "sportello": false,
+   "punteggio": 0,
+   "pertinenza": "bassa",
+   "categorie": [],
+   "ultima_visto": "2026-11-27",
+   "prima_visto": "2026-11-27",
+   "note": ""
+  },
+  {
+   "id": "28a52c58b7e0",
+   "titolo": "PR FESR 2021/2027 – Azione 1.2.1 – BIOSIRIS (Base Informativa ed Operativa per lo Sviluppo Innovativo Rurale in Sicilia) – Accertamento entrate",
+   "url": "https://www.euroinfosicilia.it/pr-fesr-2021-2027-azione-1-2-1-biosiris-base-informativa-ed-operativa-per-lo-sviluppo-innovativo-rurale-in-sicilia-accertamento-entrate/",
+   "sommario": "L’Autorità per l’Innovazione Tecnologica pubblica il DDG n. 409 del 10/11/2026 con cui è disposto l’accertamento in entrata per assicurare l’integrale copertura finanziaria per l’intervento “BIOSIRIS (Base Informativa ed Operativa per lo Sviluppo Innovativo Rurale in Sicilia.)”, di cui all’Azione […] L'articolo PR FESR 2021/2027 – Azione 1.2.1 – BIOSIRIS (Base Informativa ed Operativa per lo Sviluppo Innovativo Rurale in Sicilia) – Accertamento entrate proviene da EuroInfoSicilia .",
+   "fonte_id": "euroinfosicilia",
+   "fonte": "Euroinfosicilia (PR FESR Sicilia)",
+   "ente": "Regione Siciliana – PR FESR",
+   "blocco": "regionale",
+   "territorio": "sicilia",
+   "pubblicato": "2026-11-27",
+   "scadenza": null,
+   "sportello": false,
+   "punteggio": 0,
+   "pertinenza": "bassa",
+   "categorie": [],
+   "ultima_visto": "2026-11-27",
+   "prima_visto": "2026-11-27",
+   "note": ""
+  },
+  {
+   "id": "42207c12a65d",
+   "titolo": "CPI Formia- Avviso ex art.16 L. 56/87 per n. 1 operaio generico ex categoria A- tempo parziale indeterminato presso Comune di Spigno Saturnia (LT)",
+   "url": "https://www.regione.lazio.it/notizie/lavoro/CPI-Formia-Avviso-ex-art-16-56-87-1operaio-generico-ex-categoriaA-tempo-parziale-indeterminato-Comune-Spigno-Saturnia-LT",
+   "sommario": "CPI Formia- Avviso ex art.16 L. 56/87 per n. 1 operaio generico ex categoria A- tempo parziale indeterminato presso Comune di Spigno Saturnia (LT) n. 1 unità, area professionale \"operatore\" - ex categoria A, con mansioni di operaio generico, con contratto di lavoro a tempo indeterminato parziale (n.18 ore settimanali) presso il Comune di Spigno Saturnia Leggi di più",
+   "fonte_id": "lazio-lavoro",
+   "fonte": "Regione Lazio – Lavoro",
+   "ente": "Regione Lazio",
+   "blocco": "regionale",
+   "territorio": "lazio",
+   "pubblicato": null,
+   "scadenza": null,
+   "sportello": false,
+   "punteggio": 0,
+   "pertinenza": "bassa",
+   "categorie": [],
+   "ultima_visto": "2026-11-27",
+   "prima_visto": "2026-11-27",
+   "note": ""
+  },
+  {
+   "id": "044de8e517ad",
+   "titolo": "Avviso n. 22201 del 27 novembre 2026",
+   "url": "https://www.mim.gov.it/web/guest/-/avviso-n-22201-del-27-novembre-2026",
+   "sommario": "",
+   "fonte_id": "mim",
+   "fonte": "Ministero dell'Istruzione e del Merito – Bandi e avvisi",
+   "ente": "MIM",
+   "blocco": "nazionale",
+   "territorio": "nazionale",
+   "pubblicato": "2026-11-27",
+   "scadenza": null,
+   "sportello": false,
+   "punteggio": 0,
+   "pertinenza": "bassa",
+   "categorie": [],
+   "ultima_visto": "2026-11-27",
+   "prima_visto": "2026-11-27",
+   "note": ""
+  },
+  {
+   "id": "75494ac9ba12",
+   "titolo": "Avviso n. 66 del 26 novembre 2026",
+   "url": "https://www.mim.gov.it/web/guest/-/avviso-n-66-del-26-novembre-2026",
+   "sommario": "",
+   "fonte_id": "mim",
+   "fonte": "Ministero dell'Istruzione e del Merito – Bandi e avvisi",
+   "ente": "MIM",
+   "blocco": "nazionale",
+   "territorio": "nazionale",
+   "pubblicato": "2026-11-26",
+   "scadenza": null,
+   "sportello": false,
+   "punteggio": 0,
+   "pertinenza": "bassa",
+   "categorie": [],
+   "ultima_visto": "2026-11-27",
+   "prima_visto": "2026-11-27",
+   "note": ""
+  },
+  {
+   "id": "770fe5463a14",
+   "titolo": "Decreto Direttoriale n. 1616 del 25 novembre 2026",
+   "url": "https://www.mim.gov.it/web/guest/-/decreto-direttoriale-n-1616-del-25-novembre-2026avvio-della-procedura-ai-sensi-dell-art-50-comma-1-lett-b-d-lgs-n-36-2023-per-il-servizio-di-facchinag",
+   "sommario": "",
+   "fonte_id": "mim",
+   "fonte": "Ministero dell'Istruzione e del Merito – Bandi e avvisi",
+   "ente": "MIM",
+   "blocco": "nazionale",
+   "territorio": "nazionale",
+   "pubblicato": "2026-11-25",
+   "scadenza": null,
+   "sportello": false,
+   "punteggio": 0,
+   "pertinenza": "bassa",
+   "categorie": [],
+   "ultima_visto": "2026-11-27",
+   "prima_visto": "2026-11-27",
+   "note": ""
+  },
+  {
+   "id": "30de5f4c4a24",
+   "titolo": "FSC 2021/2027 – POC 2014/2020 – Avviso “Connessioni – Nuovi luoghi per l’innovazione in Sicilia” – Progetto Heritage Smart LAB – Impresa Porta Felice Srl – Liquidazione somme",
+   "url": "https://www.euroinfosicilia.it/fsc-2021-2027-poc-2014-2020-avviso-connessioni-nuovi-luoghi-per-linnovazione-in-sicilia-progetto-heritage-smart-lab-impresa-porta-f/",
+   "sommario": "Il Dipartimento delle Attività Produttive – Servizio 5 Innovazione tecnologica e Politiche per lo sviluppo economico – col DRS n. 3433 del 26/11/2026 ha autorizzato la liquidazione della somma di euro 119.712,67, sul contributo complessivo di […] L'articolo FSC 2021/2027 – POC 2014/2020 – Avviso “Connessioni – Nuovi luoghi per l’innovazione in Sicilia” – Progetto Heritage Smart LAB – Impresa Porta Felice Srl – Liquidazione somme proviene da EuroInfoSicilia .",
+   "fonte_id": "euroinfosicilia",
+   "fonte": "Euroinfosicilia (PR FESR Sicilia)",
+   "ente": "Regione Siciliana – PR FESR",
+   "blocco": "regionale",
+   "territorio": "sicilia",
+   "pubblicato": "2026-11-27",
+   "scadenza": null,
+   "sportello": false,
+   "punteggio": -4,
+   "pertinenza": "bassa",
+   "categorie": [],
+   "ultima_visto": "2026-11-27",
+   "prima_visto": "2026-11-27",
+   "note": ""
+  },
+  {
+   "id": "f233efb2397a",
+   "titolo": "PAC 2007/2013 – Azione SAL 3.3.1 ATP – Progetto Ilighthouse – Impegno e liquidazione impresa Capo Faro",
+   "url": "https://www.euroinfosicilia.it/pac-2007-2013-azione-sal-3-3-1-atp-progetto-ilighthouse-impegno-e-liquidazione-impresa-capo-faro/",
+   "sommario": "Il Dipartimento delle Attività Produttive – Servizio 5.S “Innovazione tecnologica e Politiche per lo sviluppo economico” con DDG n. 3409 del 25/11/2026 ha impegnato e liquidato in favore dell’impresa Capo Faro s.r.l. di Palermo la somma […] L'articolo PAC 2007/2013 – Azione SAL 3.3.1 ATP – Progetto Ilighthouse – Impegno e liquidazione impresa Capo Faro proviene da EuroInfoSicilia .",
+   "fonte_id": "euroinfosicilia",
+   "fonte": "Euroinfosicilia (PR FESR Sicilia)",
+   "ente": "Regione Siciliana – PR FESR",
+   "blocco": "regionale",
+   "territorio": "sicilia",
+   "pubblicato": "2026-11-27",
+   "scadenza": null,
+   "sportello": false,
+   "punteggio": -4,
+   "pertinenza": "bassa",
+   "categorie": [],
+   "ultima_visto": "2026-11-27",
+   "prima_visto": "2026-11-27",
+   "note": ""
+  },
+  {
+   "id": "b3a5c4256309",
+   "titolo": "PR FESR 2021/2027 – Azione 1.2.1 – Progetto Esc – Score Evoluzione – Società Net Service SpA – Liquidazione Sal 4",
+   "url": "https://www.euroinfosicilia.it/pr-fesr-2021-2027-azione-1-2-1-progetto-esc-score-evoluzione-societa-net-service-spa-liquidazione-sal-4/",
+   "sommario": "L’Autorità Regionale per l’innovazione Tecnologica ha pubblicato il DDG n. 427 del 13/11/2026 di liquidazione e autorizzazione al pagamento della fattura n. 368-26-EL del 28/10/2026 a valere sul capitolo 620086, relativa al SAL n. 4 al 30.06.2026 […] L'articolo PR FESR 2021/2027 – Azione 1.2.1 – Progetto Esc – Score Evoluzione – Società Net Service SpA – Liquidazione Sal 4 proviene da EuroInfoSicilia .",
+   "fonte_id": "euroinfosicilia",
+   "fonte": "Euroinfosicilia (PR FESR Sicilia)",
+   "ente": "Regione Siciliana – PR FESR",
+   "blocco": "regionale",
+   "territorio": "sicilia",
+   "pubblicato": "2026-11-27",
+   "scadenza": null,
+   "sportello": false,
+   "punteggio": -4,
+   "pertinenza": "bassa",
+   "categorie": [],
+   "ultima_visto": "2026-11-27",
+   "prima_visto": "2026-11-27",
+   "note": ""
+  },
+  {
+   "id": "c1ef7560a601",
+   "titolo": "PR FESR 2021/2027 – Azione 1.2.1 – Esc – Score Evoluzione – Società Net Service SpA – Liquidazione Sal 3",
+   "url": "https://www.euroinfosicilia.it/pr-fesr-2021-2027-azione-1-2-1-esc-score-evoluzione-societa-net-service-spa-liquidazione-sal-3/",
+   "sommario": "L’Autorità Regionale per l’innovazione Tecnologica ha pubblicato il DDG n. 404 del 09/11/2026 di liquidazione e autorizzazione al pagamento della fattura n. 367-26-EL del 28/10/2026 a valere sul capitolo 620086, relativa al SAL n. 3 del […] L'articolo PR FESR 2021/2027 – Azione 1.2.1 – Esc – Score Evoluzione – Società Net Service SpA – Liquidazione Sal 3 proviene da EuroInfoSicilia .",
+   "fonte_id": "euroinfosicilia",
+   "fonte": "Euroinfosicilia (PR FESR Sicilia)",
+   "ente": "Regione Siciliana – PR FESR",
+   "blocco": "regionale",
+   "territorio": "sicilia",
+   "pubblicato": "2026-11-27",
+   "scadenza": null,
+   "sportello": false,
+   "punteggio": -4,
+   "pertinenza": "bassa",
+   "categorie": [],
+   "ultima_visto": "2026-11-27",
+   "prima_visto": "2026-11-27",
+   "note": ""
+  },
   {
    "id": "e679714fe572",
    "titolo": "Centro per l'Impiego di Siracusa - Avviso di selezione con avviamento degli iscritti al Centro per l’Impiego di Lentini e Augusta, per l’assunzione a t.d per n. 151 giornate lavorative per n. 1 posto per “Agricoltori e operai agricoli specializzati\"",
@@ -889,7 +1260,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-26",
    "note": ""
   },
@@ -909,7 +1280,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-26",
    "note": ""
   },
@@ -929,7 +1300,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-26",
    "note": ""
   },
@@ -949,7 +1320,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-26",
    "note": ""
   },
@@ -1032,7 +1403,7 @@
     "Formazione",
     "Politiche attive"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-25",
    "note": ""
   },
@@ -1120,7 +1491,7 @@
    "categorie": [
     "Formazione"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-25",
    "note": ""
   },
@@ -1140,7 +1511,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-25",
    "note": ""
   },
@@ -1182,7 +1553,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-25",
    "note": ""
   },
@@ -1202,7 +1573,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-25",
    "note": ""
   },
@@ -1222,7 +1593,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-25",
    "note": ""
   },
@@ -1242,7 +1613,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-25",
    "note": ""
   },
@@ -1287,7 +1658,7 @@
     "PA / scuola",
     "Europa"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-24",
    "note": ""
   },
@@ -1310,7 +1681,7 @@
     "Politiche attive",
     "Europa"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-24",
    "note": ""
   },
@@ -1332,7 +1703,7 @@
    "categorie": [
     "Formazione"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-24",
    "note": ""
   },
@@ -1496,7 +1867,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-24",
    "note": ""
   },
@@ -1556,7 +1927,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-24",
    "note": ""
   },
@@ -1661,7 +2032,7 @@
    "categorie": [
     "Terzo settore / sociale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-23",
    "note": ""
   },
@@ -1683,7 +2054,7 @@
    "categorie": [
     "Sviluppo locale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-23",
    "note": ""
   },
@@ -1889,7 +2260,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-23",
    "note": ""
   },
@@ -1929,7 +2300,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-22",
    "note": ""
   },
@@ -1952,7 +2323,7 @@
     "Formazione",
     "Terzo settore / sociale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-21",
    "note": ""
   },
@@ -2042,7 +2413,7 @@
     "Terzo settore / sociale",
     "Sviluppo locale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-20",
    "note": ""
   },
@@ -2065,7 +2436,7 @@
     "Sviluppo locale",
     "Europa"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-20",
    "note": ""
   },
@@ -2265,7 +2636,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-20",
    "note": ""
   },
@@ -2287,7 +2658,7 @@
    "categorie": [
     "Formazione"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-19",
    "note": ""
   },
@@ -2310,7 +2681,7 @@
     "Formazione",
     "Europa"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-19",
    "note": ""
   },
@@ -2377,7 +2748,7 @@
    "categorie": [
     "Formazione"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-19",
    "note": ""
   },
@@ -2399,7 +2770,7 @@
    "categorie": [
     "Digitale / consulenza"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-19",
    "note": ""
   },
@@ -2421,7 +2792,7 @@
    "categorie": [
     "Europa"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-19",
    "note": ""
   },
@@ -2443,7 +2814,7 @@
    "categorie": [
     "Terzo settore / sociale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-19",
    "note": ""
   },
@@ -2465,7 +2836,7 @@
    "categorie": [
     "Terzo settore / sociale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-19",
    "note": ""
   },
@@ -2487,7 +2858,7 @@
    "categorie": [
     "Terzo settore / sociale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-19",
    "note": ""
   },
@@ -2689,7 +3060,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-19",
    "note": ""
   },
@@ -2709,7 +3080,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-19",
    "note": ""
   },
@@ -2729,7 +3100,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-19",
    "note": ""
   },
@@ -2749,7 +3120,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-19",
    "note": ""
   },
@@ -2769,7 +3140,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-19",
    "note": ""
   },
@@ -2852,7 +3223,7 @@
     "Formazione",
     "Europa"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-18",
    "note": ""
   },
@@ -2875,7 +3246,7 @@
     "Politiche attive",
     "Europa"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-18",
    "note": ""
   },
@@ -2919,7 +3290,7 @@
    "categorie": [
     "Digitale / consulenza"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-18",
    "note": ""
   },
@@ -3104,7 +3475,7 @@
     "Formazione",
     "Terzo settore / sociale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-17",
    "note": ""
   },
@@ -3126,7 +3497,7 @@
    "categorie": [
     "Terzo settore / sociale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-17",
    "note": ""
   },
@@ -3148,7 +3519,7 @@
    "categorie": [
     "Terzo settore / sociale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-17",
    "note": ""
   },
@@ -3194,7 +3565,7 @@
     "Formazione",
     "Politiche attive"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-17",
    "note": ""
   },
@@ -3217,7 +3588,7 @@
     "Politiche attive",
     "Europa"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-17",
    "note": ""
   },
@@ -3240,7 +3611,7 @@
     "Politiche attive",
     "Europa"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-17",
    "note": ""
   },
@@ -3262,7 +3633,7 @@
    "categorie": [
     "Europa"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-17",
    "note": ""
   },
@@ -3284,7 +3655,7 @@
    "categorie": [
     "Europa"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-17",
    "note": ""
   },
@@ -3350,7 +3721,7 @@
    "categorie": [
     "Terzo settore / sociale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-17",
    "note": ""
   },
@@ -3392,7 +3763,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-17",
    "note": ""
   },
@@ -3412,7 +3783,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-17",
    "note": ""
   },
@@ -3432,7 +3803,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-17",
    "note": ""
   },
@@ -3714,7 +4085,7 @@
    "categorie": [
     "Terzo settore / sociale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-16",
    "note": ""
   },
@@ -3962,7 +4333,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-16",
    "note": ""
   },
@@ -3982,7 +4353,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-16",
    "note": ""
   },
@@ -4002,7 +4373,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-16",
    "note": ""
   },
@@ -4064,7 +4435,7 @@
    "categorie": [
     "Terzo settore / sociale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-14",
    "note": ""
   },
@@ -4086,7 +4457,7 @@
    "categorie": [
     "Terzo settore / sociale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-14",
    "note": ""
   },
@@ -4131,7 +4502,7 @@
     "PA / scuola",
     "Europa"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-13",
    "note": ""
   },
@@ -4175,7 +4546,7 @@
    "categorie": [
     "Formazione"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-13",
    "note": ""
   },
@@ -4198,7 +4569,7 @@
     "Politiche attive",
     "Terzo settore / sociale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-13",
    "note": ""
   },
@@ -4221,7 +4592,7 @@
     "Politiche attive",
     "Europa"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-13",
    "note": ""
   },
@@ -4265,7 +4636,7 @@
    "categorie": [
     "Europa"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-13",
    "note": ""
   },
@@ -4331,7 +4702,7 @@
    "categorie": [
     "PA / scuola"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-13",
    "note": ""
   },
@@ -4353,7 +4724,7 @@
    "categorie": [
     "Europa"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-13",
    "note": ""
   },
@@ -4436,7 +4807,7 @@
     "Formazione",
     "Terzo settore / sociale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-12",
    "note": ""
   },
@@ -4483,7 +4854,7 @@
     "Digitale / consulenza",
     "Europa"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-12",
    "note": ""
   },
@@ -4577,7 +4948,7 @@
     "Terzo settore / sociale",
     "Europa"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-12",
    "note": ""
   },
@@ -4690,7 +5061,7 @@
    "categorie": [
     "Europa"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-12",
    "note": ""
   },
@@ -4932,7 +5303,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-12",
    "note": ""
   },
@@ -5112,7 +5483,7 @@
    "categorie": [
     "Sviluppo locale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-11",
    "note": ""
   },
@@ -5302,7 +5673,7 @@
     "Terzo settore / sociale",
     "Digitale / consulenza"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-10",
    "note": ""
   },
@@ -5325,7 +5696,7 @@
     "Formazione",
     "Europa"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-10",
    "note": ""
   },
@@ -5369,7 +5740,7 @@
    "categorie": [
     "Sviluppo locale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-10",
    "note": ""
   },
@@ -5853,7 +6224,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-08",
    "note": ""
   },
@@ -5913,7 +6284,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-07",
    "note": ""
   },
@@ -5936,7 +6307,7 @@
     "Formazione",
     "Digitale / consulenza"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-06",
    "note": ""
   },
@@ -5981,7 +6352,7 @@
    "categorie": [
     "Formazione"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-06",
    "note": ""
   },
@@ -6374,7 +6745,7 @@
     "Terzo settore / sociale",
     "PA / scuola"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-05",
    "note": ""
   },
@@ -6556,7 +6927,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-05",
    "note": ""
   },
@@ -7298,7 +7669,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-03",
    "note": ""
   },
@@ -7623,7 +7994,7 @@
     "Terzo settore / sociale",
     "Digitale / consulenza"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-02",
    "note": ""
   },
@@ -7735,7 +8106,7 @@
    "categorie": [
     "Formazione"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-11-02",
    "note": ""
   },
@@ -8043,7 +8414,7 @@
    "categorie": [
     "Terzo settore / sociale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-31",
    "note": ""
   },
@@ -8083,7 +8454,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-31",
    "note": ""
   },
@@ -8372,7 +8743,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-30",
    "note": ""
   },
@@ -8412,7 +8783,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-30",
    "note": ""
   },
@@ -8432,7 +8803,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-30",
    "note": ""
   },
@@ -8582,7 +8953,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-29",
    "note": ""
   },
@@ -9668,7 +10039,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-26",
    "note": ""
   },
@@ -9852,7 +10223,7 @@
    "categorie": [
     "Politiche attive"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-24",
    "note": ""
   },
@@ -9899,7 +10270,7 @@
    "categorie": [
     "Formazione"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-23",
    "note": ""
   },
@@ -9966,7 +10337,7 @@
    "categorie": [
     "Sviluppo locale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-23",
    "note": ""
   },
@@ -10132,7 +10503,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-23",
    "note": ""
   },
@@ -10381,7 +10752,7 @@
    "categorie": [
     "Formazione"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-22",
    "note": ""
   },
@@ -10425,7 +10796,7 @@
    "categorie": [
     "Formazione"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-22",
    "note": ""
   },
@@ -10469,7 +10840,7 @@
    "categorie": [
     "Formazione"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-22",
    "note": ""
   },
@@ -10597,7 +10968,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-22",
    "note": ""
   },
@@ -10719,7 +11090,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-22",
    "note": ""
   },
@@ -10739,7 +11110,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-22",
    "note": ""
   },
@@ -10779,7 +11150,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-22",
    "note": ""
   },
@@ -10799,7 +11170,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-22",
    "note": ""
   },
@@ -11015,7 +11386,7 @@
    "categorie": [
     "Sviluppo locale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-21",
    "note": ""
   },
@@ -11201,7 +11572,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-21",
    "note": ""
   },
@@ -11310,7 +11681,7 @@
    "categorie": [
     "Terzo settore / sociale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-20",
    "note": ""
   },
@@ -11764,7 +12135,7 @@
     "Formazione",
     "Digitale / consulenza"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-17",
    "note": ""
   },
@@ -12123,7 +12494,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-16",
    "note": ""
   },
@@ -12685,7 +13056,7 @@
    "categorie": [
     "PA / scuola"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-14",
    "note": ""
   },
@@ -12891,7 +13262,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-14",
    "note": ""
   },
@@ -12911,7 +13282,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-14",
    "note": ""
   },
@@ -13084,7 +13455,7 @@
    "categorie": [
     "Formazione"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-13",
    "note": ""
   },
@@ -13328,7 +13699,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-13",
    "note": ""
   },
@@ -13392,7 +13763,7 @@
     "Politiche attive",
     "Digitale / consulenza"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-12",
    "note": ""
   },
@@ -13645,7 +14016,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-12",
    "note": ""
   },
@@ -14217,7 +14588,7 @@
    "categorie": [
     "Sviluppo locale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-08",
    "note": ""
   },
@@ -14362,7 +14733,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-08",
    "note": ""
   },
@@ -14641,7 +15012,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-07",
    "note": ""
   },
@@ -14744,7 +15115,7 @@
     "Formazione",
     "Digitale / consulenza"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-06",
    "note": ""
   },
@@ -14868,7 +15239,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-06",
    "note": ""
   },
@@ -15035,7 +15406,7 @@
     "Terzo settore / sociale",
     "Sviluppo locale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-05",
    "note": ""
   },
@@ -15286,7 +15657,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-05",
    "note": ""
   },
@@ -15370,7 +15741,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-03",
    "note": ""
   },
@@ -15705,7 +16076,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-02",
    "note": ""
   },
@@ -15725,7 +16096,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-10-02",
    "note": ""
   },
@@ -16149,7 +16520,7 @@
     "Politiche attive",
     "PA / scuola"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-30",
    "note": ""
   },
@@ -16985,7 +17356,7 @@
    "categorie": [
     "Digitale / consulenza"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-26",
    "note": ""
   },
@@ -17554,7 +17925,7 @@
    "categorie": [
     "Terzo settore / sociale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-24",
    "note": ""
   },
@@ -17687,7 +18058,7 @@
    "categorie": [
     "Digitale / consulenza"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-24",
    "note": ""
   },
@@ -17962,7 +18333,7 @@
     "Formazione",
     "Digitale / consulenza"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-23",
    "note": ""
   },
@@ -18315,7 +18686,7 @@
    "categorie": [
     "Digitale / consulenza"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-22",
    "note": ""
   },
@@ -18338,7 +18709,7 @@
     "Terzo settore / sociale",
     "Digitale / consulenza"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-22",
    "note": ""
   },
@@ -18647,7 +19018,7 @@
     "Formazione",
     "Digitale / consulenza"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-21",
    "note": ""
   },
@@ -19098,7 +19469,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-18",
    "note": ""
   },
@@ -19118,7 +19489,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-18",
    "note": ""
   },
@@ -19138,7 +19509,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-18",
    "note": ""
   },
@@ -19267,7 +19638,7 @@
     "Politiche attive",
     "Terzo settore / sociale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-17",
    "note": ""
   },
@@ -19498,7 +19869,7 @@
     "Politiche attive",
     "Digitale / consulenza"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -19617,7 +19988,7 @@
     "Formazione",
     "Digitale / consulenza"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -19952,7 +20323,7 @@
     "Formazione",
     "Digitale / consulenza"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -20160,7 +20531,7 @@
    "categorie": [
     "Politiche attive"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -20364,7 +20735,7 @@
    "categorie": [
     "Formazione"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -20453,7 +20824,7 @@
     "Formazione",
     "Terzo settore / sociale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -20789,7 +21160,7 @@
    "categorie": [
     "Formazione"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -21080,7 +21451,7 @@
     "Formazione",
     "PA / scuola"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -21216,7 +21587,7 @@
    "categorie": [
     "Sviluppo locale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -21326,7 +21697,7 @@
    "categorie": [
     "PA / scuola"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -21679,7 +22050,7 @@
    "categorie": [
     "Sviluppo locale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -21701,7 +22072,7 @@
    "categorie": [
     "Sviluppo locale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -21723,7 +22094,7 @@
    "categorie": [
     "Sviluppo locale"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -21745,7 +22116,7 @@
    "categorie": [
     "Europa"
    ],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -21871,7 +22242,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -22077,7 +22448,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -22097,7 +22468,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -22117,7 +22488,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -22257,7 +22628,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -22277,7 +22648,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -22417,7 +22788,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -22437,7 +22808,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -22477,7 +22848,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -22497,7 +22868,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -22517,7 +22888,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -22537,7 +22908,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -22977,7 +23348,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -22997,7 +23368,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -23017,7 +23388,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -23037,7 +23408,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -23157,7 +23528,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -23177,7 +23548,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -23197,7 +23568,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
@@ -23357,7 +23728,7 @@
    "punteggio": 0,
    "pertinenza": "bassa",
    "categorie": [],
-   "ultima_visto": "2026-11-26",
+   "ultima_visto": "2026-11-27",
    "prima_visto": "2026-09-16",
    "note": ""
   },
